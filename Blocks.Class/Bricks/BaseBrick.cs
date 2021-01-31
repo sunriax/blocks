@@ -12,63 +12,68 @@ namespace Blocks.Class.Bricks
 
     public abstract class BaseBrick<T>
     {
-        private bool[,] brick =
-            {
-                { false, true,  false, false },
-                { true,  true,  true,  true  },
-                { false, true,  false, false }
-            };
+        private bool[,] defaultBrick =
+        {
+            { false, true,  false, false },
+            { true,  true,  true,  true  },
+            { false, true,  false, false }
+        };
 
-        public BaseBrick() { }
+        private bool[,] currentBrick;
+
+        public BaseBrick()
+        {
+            this.currentBrick = defaultBrick;
+        }
 
         public bool[,] Brick
         {
             get
             {
-                bool[,] brick;
-
                 switch (this.Position)
                 {
-                    case Position.Up:
-                        return this.brick;
                     case Position.Down:
-                        brick = new bool[this.brick.GetLength(0), this.brick.GetLength(1)];
+                        this.currentBrick = new bool[this.defaultBrick.GetLength(0), this.defaultBrick.GetLength(1)];
 
-                        for (int y = 0; y < this.brick.GetLength(0); y++)
+                        for (int y = 0; y < this.defaultBrick.GetLength(0); y++)
                         {
-                            for (int x = 0; x < this.brick.GetLength(1); x++)
+                            for (int x = 0; x < this.defaultBrick.GetLength(1); x++)
                             {
-                                brick[y, x] = this.brick[(this.brick.GetLength(0) - y - 1), (this.brick.GetLength(1) - x - 1)];
+                                this.currentBrick[y, x] = this.defaultBrick[(this.defaultBrick.GetLength(0) - y - 1), (this.defaultBrick.GetLength(1) - x - 1)];
                             }
                         }
-                        return brick;
+
+                        return this.currentBrick;
                     case Position.Right:
-                        brick = new bool[this.brick.GetLength(1), this.brick.GetLength(0)];
+                        this.currentBrick = new bool[this.defaultBrick.GetLength(1), this.defaultBrick.GetLength(0)];
 
-                        for (int y = 0; y < this.brick.GetLength(0); y++)
+                        for (int y = 0; y < this.defaultBrick.GetLength(0); y++)
                         {
-                            for (int x = 0; x < this.brick.GetLength(1); x++)
+                            for (int x = 0; x < this.defaultBrick.GetLength(1); x++)
                             {
-                                brick[x, y] = this.brick[(this.brick.GetLength(0) - y - 1), x];
+                                this.currentBrick[x, y] = this.defaultBrick[(this.defaultBrick.GetLength(0) - y - 1), x];
                             }
                         }
-                        return brick;
+
+                        return this.currentBrick;
                     case Position.Left:
-                        brick = new bool[this.brick.GetLength(1), this.brick.GetLength(0)];
+                        this.currentBrick = new bool[this.defaultBrick.GetLength(1), this.defaultBrick.GetLength(0)];
 
-                        for (int y = 0; y < this.brick.GetLength(0); y++)
+                        for (int y = 0; y < this.defaultBrick.GetLength(0); y++)
                         {
-                            for (int x = 0; x < this.brick.GetLength(1); x++)
+                            for (int x = 0; x < this.defaultBrick.GetLength(1); x++)
                             {
-                                brick[x, y] = this.brick[y, (this.brick.GetLength(1) - x - 1)];
+                                this.currentBrick[x, y] = this.defaultBrick[y, (this.defaultBrick.GetLength(1) - x - 1)];
                             }
                         }
-                        return brick;
+
+                        return this.currentBrick;
                     default:
-                        return null;
+                        this.currentBrick = this.defaultBrick;
+                        return this.currentBrick;
                 }
             }
-            set
+            protected set
             {
                 if (value == null)
                     throw new NullReferenceException();
@@ -76,17 +81,21 @@ namespace Blocks.Class.Bricks
                 if (value.GetLength(0) > 4 || value.GetLength(1) > 4)
                     throw new ArgumentOutOfRangeException();
 
-                this.brick = value;
+                this.defaultBrick = value;
             }
         }
 
         public Position Position { get; protected set; }
+
+        public int Width { get => this.currentBrick.GetLength(1); }
+
+        public int Height { get => this.currentBrick.GetLength(0); }
 
         public virtual void Rotate(Position direction)
         {
             this.Position = direction;
         }
 
-        public virtual T Color { get; set; }
+        public T Color { get; set; }
     }
 }
