@@ -63,7 +63,8 @@ namespace Blocks.Forms
             this.helpToolStripMenuItem});
             this.menuStripMain.Location = new System.Drawing.Point(0, 0);
             this.menuStripMain.Name = "menuStripMain";
-            this.menuStripMain.Size = new System.Drawing.Size(622, 28);
+            this.menuStripMain.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStripMain.Size = new System.Drawing.Size(544, 24);
             this.menuStripMain.TabIndex = 0;
             this.menuStripMain.Text = "menuStripMain";
             // 
@@ -74,24 +75,24 @@ namespace Blocks.Forms
             this.toolStripSeparator1,
             this.quitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // rankingToolStripMenuItem
             // 
             this.rankingToolStripMenuItem.Name = "rankingToolStripMenuItem";
-            this.rankingToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
+            this.rankingToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.rankingToolStripMenuItem.Text = "Ranking";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(142, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(114, 6);
             // 
             // quitToolStripMenuItem
             // 
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            this.quitToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
+            this.quitToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.quitToolStripMenuItem.Text = "Quit";
             // 
             // helpToolStripMenuItem
@@ -102,30 +103,30 @@ namespace Blocks.Forms
             this.updateToolStripMenuItem,
             this.versionToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // controlToolStripMenuItem
             // 
             this.controlToolStripMenuItem.Name = "controlToolStripMenuItem";
-            this.controlToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
+            this.controlToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.controlToolStripMenuItem.Text = "Control";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(138, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(111, 6);
             // 
             // updateToolStripMenuItem
             // 
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.updateToolStripMenuItem.Text = "Update";
             // 
             // versionToolStripMenuItem
             // 
             this.versionToolStripMenuItem.Name = "versionToolStripMenuItem";
-            this.versionToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
+            this.versionToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.versionToolStripMenuItem.Text = "Version";
             // 
             // groupBoxBlocks
@@ -134,9 +135,11 @@ namespace Blocks.Forms
             this.groupBoxBlocks.Controls.Add(this.groupBoxRanking);
             this.groupBoxBlocks.Controls.Add(this.groupBoxSettings);
             this.groupBoxBlocks.Controls.Add(this.pictureBoxBlocks);
-            this.groupBoxBlocks.Location = new System.Drawing.Point(12, 31);
+            this.groupBoxBlocks.Location = new System.Drawing.Point(10, 23);
+            this.groupBoxBlocks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxBlocks.Name = "groupBoxBlocks";
-            this.groupBoxBlocks.Size = new System.Drawing.Size(598, 390);
+            this.groupBoxBlocks.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBoxBlocks.Size = new System.Drawing.Size(523, 292);
             this.groupBoxBlocks.TabIndex = 1;
             this.groupBoxBlocks.TabStop = false;
             this.groupBoxBlocks.Text = "Blocks";
@@ -144,18 +147,20 @@ namespace Blocks.Forms
             // linkLabelGithub
             // 
             this.linkLabelGithub.AutoSize = true;
-            this.linkLabelGithub.Location = new System.Drawing.Point(456, 357);
+            this.linkLabelGithub.Location = new System.Drawing.Point(399, 268);
             this.linkLabelGithub.Name = "linkLabelGithub";
-            this.linkLabelGithub.Size = new System.Drawing.Size(136, 20);
+            this.linkLabelGithub.Size = new System.Drawing.Size(112, 15);
             this.linkLabelGithub.TabIndex = 4;
             this.linkLabelGithub.TabStop = true;
             this.linkLabelGithub.Text = "github.com/sunriax";
             // 
             // groupBoxRanking
             // 
-            this.groupBoxRanking.Location = new System.Drawing.Point(322, 166);
+            this.groupBoxRanking.Location = new System.Drawing.Point(282, 124);
+            this.groupBoxRanking.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxRanking.Name = "groupBoxRanking";
-            this.groupBoxRanking.Size = new System.Drawing.Size(270, 133);
+            this.groupBoxRanking.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBoxRanking.Size = new System.Drawing.Size(236, 100);
             this.groupBoxRanking.TabIndex = 3;
             this.groupBoxRanking.TabStop = false;
             this.groupBoxRanking.Text = "Ranking";
@@ -165,18 +170,21 @@ namespace Blocks.Forms
             this.groupBoxSettings.Controls.Add(this.buttonStart);
             this.groupBoxSettings.Controls.Add(this.checkBoxSound);
             this.groupBoxSettings.Controls.Add(this.comboBoxLevel);
-            this.groupBoxSettings.Location = new System.Drawing.Point(322, 27);
+            this.groupBoxSettings.Location = new System.Drawing.Point(282, 20);
+            this.groupBoxSettings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxSettings.Name = "groupBoxSettings";
-            this.groupBoxSettings.Size = new System.Drawing.Size(270, 133);
+            this.groupBoxSettings.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBoxSettings.Size = new System.Drawing.Size(236, 100);
             this.groupBoxSettings.TabIndex = 1;
             this.groupBoxSettings.TabStop = false;
             this.groupBoxSettings.Text = "Settings";
             // 
             // buttonStart
             // 
-            this.buttonStart.Location = new System.Drawing.Point(7, 91);
+            this.buttonStart.Location = new System.Drawing.Point(6, 68);
+            this.buttonStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonStart.Name = "buttonStart";
-            this.buttonStart.Size = new System.Drawing.Size(94, 29);
+            this.buttonStart.Size = new System.Drawing.Size(82, 22);
             this.buttonStart.TabIndex = 2;
             this.buttonStart.Text = "Start";
             this.buttonStart.UseVisualStyleBackColor = true;
@@ -185,12 +193,14 @@ namespace Blocks.Forms
             // checkBoxSound
             // 
             this.checkBoxSound.AutoSize = true;
-            this.checkBoxSound.Location = new System.Drawing.Point(7, 61);
+            this.checkBoxSound.Location = new System.Drawing.Point(6, 46);
+            this.checkBoxSound.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBoxSound.Name = "checkBoxSound";
-            this.checkBoxSound.Size = new System.Drawing.Size(73, 24);
+            this.checkBoxSound.Size = new System.Drawing.Size(60, 19);
             this.checkBoxSound.TabIndex = 1;
             this.checkBoxSound.Text = "Sound";
             this.checkBoxSound.UseVisualStyleBackColor = true;
+            this.checkBoxSound.CheckedChanged += new System.EventHandler(this.checkBoxSound_CheckedChanged);
             // 
             // comboBoxLevel
             // 
@@ -206,18 +216,20 @@ namespace Blocks.Forms
             "Level 7",
             "Level 8",
             "Level 9"});
-            this.comboBoxLevel.Location = new System.Drawing.Point(7, 27);
+            this.comboBoxLevel.Location = new System.Drawing.Point(6, 20);
+            this.comboBoxLevel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxLevel.Name = "comboBoxLevel";
-            this.comboBoxLevel.Size = new System.Drawing.Size(150, 28);
+            this.comboBoxLevel.Size = new System.Drawing.Size(132, 23);
             this.comboBoxLevel.TabIndex = 0;
             // 
             // pictureBoxBlocks
             // 
             this.pictureBoxBlocks.BackColor = System.Drawing.Color.White;
             this.pictureBoxBlocks.Enabled = false;
-            this.pictureBoxBlocks.Location = new System.Drawing.Point(7, 27);
+            this.pictureBoxBlocks.Location = new System.Drawing.Point(6, 20);
+            this.pictureBoxBlocks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxBlocks.Name = "pictureBoxBlocks";
-            this.pictureBoxBlocks.Size = new System.Drawing.Size(300, 350);
+            this.pictureBoxBlocks.Size = new System.Drawing.Size(262, 262);
             this.pictureBoxBlocks.TabIndex = 0;
             this.pictureBoxBlocks.TabStop = false;
             this.pictureBoxBlocks.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBoxBlocks_Paint);
@@ -229,13 +241,14 @@ namespace Blocks.Forms
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(622, 433);
+            this.ClientSize = new System.Drawing.Size(544, 325);
             this.Controls.Add(this.groupBoxBlocks);
             this.Controls.Add(this.menuStripMain);
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStripMain;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormMain";
             this.Text = "Blocks";
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormMain_KeyPress);

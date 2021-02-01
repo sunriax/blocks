@@ -10,4 +10,11 @@
     <ProjectReference Include="..\Blocks.Class\Blocks.Class.csproj" />
   </ItemGroup>
 
+  <!-- Found here https://archive.org/details/TetrisThemeMusic -->
+  <ItemGroup>
+    <None Update="Tetris.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

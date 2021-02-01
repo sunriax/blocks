@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -33,6 +34,11 @@ namespace Blocks.Forms
 
         private Field<Color> field;
         private Shifter<Color> shifter;
+
+        private SoundPlayer player = new SoundPlayer()
+        {
+            SoundLocation = "./Tetris.wav"
+        };
 
         public FormMain()
         {
@@ -157,6 +163,14 @@ namespace Blocks.Forms
             }
 
             this.pictureBoxBlocks.Invalidate();
+        }
+
+        private void checkBoxSound_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.checkBoxSound.Checked)
+                player.PlayLooping();
+            else
+                player.Stop();
         }
     }
 }
