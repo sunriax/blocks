@@ -16,28 +16,32 @@ namespace Blocks.Forms
     {
         private int BRICK_SIZE = 20;
 
+        private List<Color> colors = new List<Color>()
+        {
+            Color.Red,
+            Color.Blue,
+            Color.Green,
+            Color.Magenta,
+            Color.Aqua,
+            Color.Brown,
+            Color.BlueViolet,
+            Color.AliceBlue,
+            Color.Beige,
+            Color.DarkGreen,
+            Color.DarkBlue
+        };
+
         private Field<Color> field;
         private Shifter<Color> shifter;
 
-        //private BaseBrick<Color> brick = new BlueRickyBrick<Color>();
-        //private BaseBrick<Color> brick = new ClevelandBrick<Color>();
-        //private BaseBrick<Color> brick = new HeroBrick<Color>();
-        //private BaseBrick<Color> brick = new OrangeRickyBrick<Color>();
-        //private BaseBrick<Color> brick = new RhodeIslandBrick<Color>();
-        //private BaseBrick<Color> brick = new SmashboyBrick<Color>();
-        private BaseBrick<Color> brick = new TeeweeBrick<Color>();
-
         public FormMain()
         {
-            this.brick.Color = Color.Red;
-
             InitializeComponent();
 
-            this.pictureBoxBlocks.Width -= this.pictureBoxBlocks.Width % BRICK_SIZE;
-            this.pictureBoxBlocks.Height -= this.pictureBoxBlocks.Height % BRICK_SIZE;
+            this.pictureBoxBlocks.Width -= this.pictureBoxBlocks.Width % BRICK_SIZE - 2;
+            this.pictureBoxBlocks.Height -= this.pictureBoxBlocks.Height % BRICK_SIZE - 2;
 
             this.field = new Field<Color>();
-            this.field.Add(this.brick);
             this.shifter = new Shifter<Color>(this.field);
             this.shifter.Size = new FieldSize(this.pictureBoxBlocks.Width / BRICK_SIZE, this.pictureBoxBlocks.Height / BRICK_SIZE);
         }
@@ -53,10 +57,19 @@ namespace Blocks.Forms
                 {
                     for (int x = 0; x < item.Brick.Width; x++)
                     {
-                        Rectangle rectantle = new Rectangle((x * BRICK_SIZE) + (BRICK_SIZE * (item.Position.X + 1) + 1), (y * BRICK_SIZE) + (BRICK_SIZE * (item.Position.Y + 1) + 1), BRICK_SIZE - 2, BRICK_SIZE - 2);
+                        Rectangle rectantle = new Rectangle(((x * BRICK_SIZE) + (BRICK_SIZE * item.Position.X) + 1), ((y * BRICK_SIZE) + (BRICK_SIZE * item.Position.Y) + 1), (BRICK_SIZE - 2), (BRICK_SIZE - 2));
 
                         if (item.Brick.Brick[y, x])
+                        {
                             dev.FillRectangle(new SolidBrush(item.Brick.Color), rectantle);
+
+                            rectantle.X -= 1;
+                            rectantle.Y -= 1;
+                            rectantle.Width = BRICK_SIZE;
+                            rectantle.Height = BRICK_SIZE;
+
+                            dev.DrawRectangle(Pens.Gray, rectantle);
+                        }
                     }
                 }
             }
@@ -74,54 +87,75 @@ namespace Blocks.Forms
 
         private void FormMain_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (char)Keys.Space)
+            switch (e.KeyChar)
             {
-                switch (this.field.Current.Brick.Position)
-                {
-                    case Position.Up:
-                        this.field.Current.Brick.Rotate(Position.Right);
-                        break;
-                    case Position.Right:
-                        this.field.Current.Brick.Rotate(Position.Down);
-                        break;
-                    case Position.Down:
-                        this.field.Current.Brick.Rotate(Position.Left);
-                        break;
-                    case Position.Left:
-                        this.field.Current.Brick.Rotate(Position.Up);
-                        break;
-                    default:
-                        break;
-                }
+                case (char)Keys.Space:
+                    this.shifter.Rotate();
+                    break;
+                case 'd':
+                    this.shifter.Shift(Direction.Right);
+                    break;
+                case 'a':
+                    this.shifter.Shift(Direction.Left);
+                    break;
+                case 's':
+                    this.shifter.Shift(Direction.Down);
+                    break;
+                default:
+                    break;
             }
-            else
-            {
-                switch (e.KeyChar)
-                {
-                    case 'd':
-                        this.shifter.Shift(Direction.Right);
-                        break;
-                    case 'a':
-                        this.shifter.Shift(Direction.Left);
-                        break;
-                    case 's':
-                        this.shifter.Shift(Direction.Down);
-                        break;
-                    default:
-                        break;
-                }
-            }
-
             this.pictureBoxBlocks.Invalidate();
         }
 
         private void timerInterval_Tick(object sender, EventArgs e)
         {
             if (this.shifter.Tick())
-                this.field.Add(new BlueRickyBrick<Color>()
+            {
+                Random r = new Random();
+
+                Color c = this.colors.ElementAt(r.Next(0, (this.colors.Count - 1)));
+
+                switch (r.Next(0, 5))
                 {
-                    Color = Color.Blue
-                });
+                    case 1:
+                        this.field.Add(new BlueRickyBrick<Color>()
+                        {
+                            Color = c
+                        });
+                        break;
+                    case 2:
+                        this.field.Add(new ClevelandBrick<Color>()
+                        {
+                            Color = c
+                        });
+                        break;
+                    case 3:
+                        this.field.Add(new HeroBrick<Color>()
+                        {
+                            Color = c
+                        });
+                        break;
+                    case 4:
+                        this.field.Add(new OrangeRickyBrick<Color>()
+                        {
+                            Color = c
+                        });
+                        break;
+                    case 5:
+                        this.field.Add(new RhodeIslandBrick<Color>()
+                        {
+                            Color = c
+                        });
+                        break;
+                    default:
+                        this.field.Add(new SmashboyBrick<Color>()
+                        {
+                            Color = c
+                        });
+                        break;
+                }
+            }
+
             this.pictureBoxBlocks.Invalidate();
         }
     }

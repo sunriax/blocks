@@ -10,7 +10,7 @@ namespace Blocks.Class.Fields
 
         public Field() { }
 
-        public FieldBrick<T> Current { get => this.elements[this.elements.Count - 1]; }
+        public FieldBrick<T> Current { get => this.elements.Count > 0 ? this.elements [this.elements.Count - 1] : null; }
         public List<FieldBrick<T>> Elements { get => this.elements; }
 
         public void Add(BaseBrick<T> brick)
