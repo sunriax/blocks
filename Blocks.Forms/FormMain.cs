@@ -1,5 +1,6 @@
 ﻿using Blocks.Class.Bricks;
-using Blocks.Class.Fields;
+using Blocks.Class.Functions;
+using Blocks.Class.Game;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -99,13 +100,13 @@ namespace Blocks.Forms
                     this.shifter.Rotate();
                     break;
                 case 'd':
-                    this.shifter.Shift(Direction.Right);
+                    this.shifter.Move(Direction.Right);
                     break;
                 case 'a':
-                    this.shifter.Shift(Direction.Left);
+                    this.shifter.Move(Direction.Left);
                     break;
                 case 's':
-                    this.shifter.Shift(Direction.Down);
+                    this.shifter.Move(Direction.Down);
                     break;
                 default:
                     break;

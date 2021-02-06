@@ -1,10 +1,11 @@
 ﻿using Blocks.Class.Bricks;
+using Blocks.Class.Game;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
 
-namespace Blocks.Class.Fields
+namespace Blocks.Class.Functions
 {
     public enum Direction
     {
@@ -13,11 +14,11 @@ namespace Blocks.Class.Fields
         Right
     }
 
-    public class Shifter<T>
+    public class Shift<T>
     {
         private Field<T> field;
 
-        public Shifter(Field<T> field)
+        public Shift(Field<T> field)
         {
             this.field = field;
         }
@@ -66,7 +67,7 @@ namespace Blocks.Class.Fields
             }
         }
 
-        public void Shift(Direction direction)
+        public void Move(Direction direction)
         {
 
             switch (direction)

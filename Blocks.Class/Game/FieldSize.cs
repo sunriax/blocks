@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Blocks.Class.Fields
+namespace Blocks.Class.Game
 {
     public class FieldSize
     {

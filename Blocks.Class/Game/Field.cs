@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 
-namespace Blocks.Class.Fields
+namespace Blocks.Class.Game
 {
     public class Field<T>
     {
