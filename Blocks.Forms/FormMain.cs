@@ -34,7 +34,6 @@ namespace Blocks.Forms
         };
 
         private Field<Color> field;
-        private Shifter<Color> shifter;
 
         private SoundPlayer player = new SoundPlayer()
         {
@@ -48,9 +47,7 @@ namespace Blocks.Forms
             this.pictureBoxBlocks.Width -= this.pictureBoxBlocks.Width % BRICK_SIZE - 2;
             this.pictureBoxBlocks.Height -= this.pictureBoxBlocks.Height % BRICK_SIZE - 2;
 
-            this.field = new Field<Color>();
-            this.shifter = new Shifter<Color>(this.field);
-            this.shifter.Size = new FieldSize(this.pictureBoxBlocks.Width / BRICK_SIZE, this.pictureBoxBlocks.Height / BRICK_SIZE);
+            this.field = new Field<Color>(this.pictureBoxBlocks.Width / BRICK_SIZE, this.pictureBoxBlocks.Height / BRICK_SIZE);
         }
 
         private void pictureBoxBlocks_Paint(object sender, PaintEventArgs e)
@@ -97,16 +94,16 @@ namespace Blocks.Forms
             switch (e.KeyChar)
             {
                 case (char)Keys.Space:
-                    this.shifter.Rotate();
+                    this.field.Rotate();
                     break;
                 case 'd':
-                    this.shifter.Move(Direction.Right);
+                    this.field.Move(Direction.Right);
                     break;
                 case 'a':
-                    this.shifter.Move(Direction.Left);
+                    this.field.Move(Direction.Left);
                     break;
                 case 's':
-                    this.shifter.Move(Direction.Down);
+                    this.field.Move(Direction.Down);
                     break;
                 default:
                     break;
@@ -116,7 +113,7 @@ namespace Blocks.Forms
 
         private void timerInterval_Tick(object sender, EventArgs e)
         {
-            if (this.shifter.Tick())
+            if (this.field.Tick())
             {
                 Random r = new Random();
 

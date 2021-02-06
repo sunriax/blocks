@@ -7,28 +7,18 @@ using System.Text;
 
 namespace Blocks.Class.Functions
 {
-    public class Validate<T>
+    public static class Validate
     {
-        private Field<T> field;
-
-        public Validate(Field<T> field)
+        public static bool ValidateRotation<T>(this Field<T> field)
         {
-            this.field = field;
-        }
-
-        public FieldSize Size { get; set; }
-
-        public bool Rotation()
-        {
-
             return false;
         }
 
-        public bool Move(Direction direction)
+        public static bool ValidateMove<T>(this Field<T> field, Direction direction)
         {
-            foreach (FieldBrick<T> fieldBrick in this.field.Elements.Where(e => e.GetHashCode() != this.field.Current.GetHashCode()))
+            foreach (FieldBrick<T> fieldBrick in field.Elements.Where(e => e.GetHashCode() != field.Current.GetHashCode()))
             {
-                if (TouchPoints<T>.Touch(TouchPoints<T>.Points(this.field.Current.Brick, this.field.Current.Position),
+                if (TouchPoints<T>.Touch(TouchPoints<T>.Points(field.Current.Brick, field.Current.Position),
                                          TouchPoints<T>.Points(fieldBrick.Brick, fieldBrick.Position), direction))
                 {
                     return false;
@@ -37,11 +27,11 @@ namespace Blocks.Class.Functions
             return true;
         }
 
-        public bool Shift()
+        public static bool ValidateShift<T>(this Field<T> field)
         {
-            foreach (FieldBrick<T> fieldBrick in this.field.Elements.Where(e => e.GetHashCode() != this.field.Current.GetHashCode()))
+            foreach (FieldBrick<T> fieldBrick in field.Elements.Where(e => e.GetHashCode() != field.Current.GetHashCode()))
             {
-                if (TouchPoints<T>.Touch(TouchPoints<T>.Points(this.field.Current.Brick, this.field.Current.Position),
+                if (TouchPoints<T>.Touch(TouchPoints<T>.Points(field.Current.Brick, field.Current.Position),
                                          TouchPoints<T>.Points(fieldBrick.Brick, fieldBrick.Position), Direction.Down))
                 {
                     return false;
