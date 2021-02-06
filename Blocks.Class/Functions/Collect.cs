@@ -2,7 +2,6 @@
 using Blocks.Class.Game;
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Text;
 
 namespace Blocks.Class.Functions
@@ -15,6 +14,8 @@ namespace Blocks.Class.Functions
         {
             this.field = field;
         }
+
+        public FieldSize Size { get; set; }
 
         public bool Complete()
         {

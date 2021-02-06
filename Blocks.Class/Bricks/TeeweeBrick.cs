@@ -14,7 +14,7 @@ namespace Blocks.Class.Bricks
             // |   |   |   |
             // +---+---+---+
 
-            this.Brick = new bool[,]
+            this.Appearance = new bool[,]
             {
                 { false,  true,  false },
                 { true,   true,  true  }

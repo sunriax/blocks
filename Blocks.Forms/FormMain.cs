@@ -66,7 +66,7 @@ namespace Blocks.Forms
                     {
                         Rectangle rectantle = new Rectangle(((x * BRICK_SIZE) + (BRICK_SIZE * item.Position.X) + 1), ((y * BRICK_SIZE) + (BRICK_SIZE * item.Position.Y) + 1), (BRICK_SIZE - 2), (BRICK_SIZE - 2));
 
-                        if (item.Brick.Brick[y, x])
+                        if (item.Brick.Appearance[y, x])
                         {
                             dev.FillRectangle(new SolidBrush(item.Brick.Color), rectantle);
 
