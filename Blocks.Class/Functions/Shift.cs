@@ -51,16 +51,20 @@ namespace Blocks.Class.Functions
             switch (field.Current.Brick.Position)
             {
                 case Position.Right:
-                    field.Current.Brick.Rotate(Position.Down);
+                    if (field.ValidateRotation())
+                        field.Current.Brick.Rotate(Position.Down);
                     break;
                 case Position.Down:
-                    field.Current.Brick.Rotate(Position.Left);
+                    if (field.ValidateRotation())
+                        field.Current.Brick.Rotate(Position.Left);
                     break;
                 case Position.Left:
-                    field.Current.Brick.Rotate(Position.Up);
+                    if (field.ValidateRotation())
+                        field.Current.Brick.Rotate(Position.Up);
                     break;
                 default:
-                    field.Current.Brick.Rotate(Position.Right);
+                    if (field.ValidateRotation())
+                        field.Current.Brick.Rotate(Position.Right);
                     break;
             }
         }

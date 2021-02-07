@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Blocks.Class.Functions
 {
-    public static class Brick
+    public static class Create
     {
         public static Random random = new Random();
 

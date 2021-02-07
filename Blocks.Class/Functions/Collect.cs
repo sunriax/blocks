@@ -6,21 +6,62 @@ using System.Text;
 
 namespace Blocks.Class.Functions
 {
-    public class Collect
+    public static class Collect
     {
-        private Field field;
-
-        public Collect(Field field)
+        public static void Clear(this Field field)
         {
-            this.field = field;
+            List<int> rows = field.Rows();
+
+            if(rows.Count > 0)
+            {
+
+            }
         }
 
-        public FieldSize Size { get; set; }
 
-        public bool Complete()
+        private static List<int> Rows(this Field field)
         {
+            List<Point> points = new List<Point>();
+            List<int> rows = new List<int>();
 
-            return false;
+            // Whole function can be shorten up
+
+            foreach (FieldBrick item in field.Elements)
+            {
+                if (item.GetHashCode() != field.Current.GetHashCode())
+                    for (int y = 0; y < item.Brick.Height; y++)
+                    {
+                        for (int x = 0; x < item.Brick.Width; x++)
+                        {
+                            if (item.Brick.Appearance[y, x])
+                                points.Add(new Point((item.Position.X + x), (item.Position.Y + y)));
+                        }
+                    }
+            }
+
+            for (int y = field.Size.Height; y > 0; --y)
+            {
+                bool line = false;
+
+                for (int x = 0; x < field.Size.Width; x++)
+                {
+                    line = false;
+
+                    foreach (Point point in points)
+                    {
+                        if (point.X == x && point.Y == y)
+                        {
+                            line = true;
+                        }
+                    }
+
+                    if (!line)
+                        break;
+                }
+                if (line)
+                    rows.Add(y);
+            }
+            return rows;
         }
     }
 }

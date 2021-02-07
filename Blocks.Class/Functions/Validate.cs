@@ -11,7 +11,9 @@ namespace Blocks.Class.Functions
     {
         public static bool ValidateRotation(this Field field)
         {
-            return false;
+
+
+            return true;
         }
 
         public static bool ValidateMove(this Field field, Direction direction)

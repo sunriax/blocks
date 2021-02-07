@@ -34,7 +34,7 @@ namespace Blocks.Forms
         };
 
         private Field field;
-        private Random random = new Random();
+        private Collect collect;
 
         private SoundPlayer player = new SoundPlayer()
         {
@@ -49,6 +49,7 @@ namespace Blocks.Forms
             this.pictureBoxBlocks.Height -= this.pictureBoxBlocks.Height % BRICK_SIZE - 2;
 
             this.field = new Field(this.pictureBoxBlocks.Width / BRICK_SIZE, this.pictureBoxBlocks.Height / BRICK_SIZE);
+            this.collect = new Collect(this.field);
         }
 
         private void pictureBoxBlocks_Paint(object sender, PaintEventArgs e)
@@ -168,6 +169,8 @@ namespace Blocks.Forms
                 if(!(this.field.Next is null))
                     this.groupBoxRanking.Invalidate();
             }
+            
+            this.collect
 
             this.pictureBoxBlocks.Invalidate();
         }

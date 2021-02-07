@@ -83,6 +83,7 @@ namespace Blocks.Class.Bricks
                 if (value.GetLength(0) > 4 || value.GetLength(1) > 4)
                     throw new ArgumentOutOfRangeException();
 
+                this.currentAppearance = value;
                 this.defaultAppearance = value;
             }
         }
