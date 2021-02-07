@@ -17,7 +17,7 @@ namespace Blocks.Class.Functions
 
     public static class Shift
     {
-        public static bool Tick<T>(this Field<T> field)
+        public static bool Tick(this Field field)
         {
             if (field.Current is null)
                 return true;
@@ -36,8 +36,13 @@ namespace Blocks.Class.Functions
             // Missing
             // Check if there are full rows
         }
+        private static bool Shoot(this Field field)
+        {
+            while (!field.Tick()) { }
+            return true;
+        }
 
-        public static void Rotate<T>(this Field<T> field)
+        public static void Rotate(this Field field)
         {
             // Missing
             // Implement if Rotation is possible
@@ -60,7 +65,7 @@ namespace Blocks.Class.Functions
             }
         }
 
-        public static void Move<T>(this Field<T> field, Direction direction)
+        public static void Move(this Field field, Direction direction)
         {
 
             switch (direction)
@@ -78,7 +83,7 @@ namespace Blocks.Class.Functions
                     field.Current.Position.X += 1;
                     break;
                 default:
-                    field.Tick();
+                    field.Shoot();
                     break;
             }
         }

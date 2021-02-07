@@ -12,7 +12,7 @@ namespace Blocks.Class.Bricks
         Left
     }
 
-    public abstract class BaseBrick<T>
+    public abstract class BaseBrick
     {
         private bool[,] defaultAppearance =
         {
@@ -97,7 +97,5 @@ namespace Blocks.Class.Bricks
         {
             this.Position = direction;
         }
-
-        public T Color { get; set; }
     }
 }

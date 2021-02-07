@@ -9,17 +9,17 @@ namespace Blocks.Class.Functions
 {
     public static class Validate
     {
-        public static bool ValidateRotation<T>(this Field<T> field)
+        public static bool ValidateRotation(this Field field)
         {
             return false;
         }
 
-        public static bool ValidateMove<T>(this Field<T> field, Direction direction)
+        public static bool ValidateMove(this Field field, Direction direction)
         {
-            foreach (FieldBrick<T> fieldBrick in field.Elements.Where(e => e.GetHashCode() != field.Current.GetHashCode()))
+            foreach (FieldBrick fieldBrick in field.Elements.Where(e => e.GetHashCode() != field.Current.GetHashCode()))
             {
-                if (TouchPoints<T>.Touch(TouchPoints<T>.Points(field.Current.Brick, field.Current.Position),
-                                         TouchPoints<T>.Points(fieldBrick.Brick, fieldBrick.Position), direction))
+                if (TouchPoints.Touch(TouchPoints.Points(field.Current.Brick, field.Current.Position),
+                                         TouchPoints.Points(fieldBrick.Brick, fieldBrick.Position), direction))
                 {
                     return false;
                 }
@@ -27,12 +27,12 @@ namespace Blocks.Class.Functions
             return true;
         }
 
-        public static bool ValidateShift<T>(this Field<T> field)
+        public static bool ValidateShift(this Field field)
         {
-            foreach (FieldBrick<T> fieldBrick in field.Elements.Where(e => e.GetHashCode() != field.Current.GetHashCode()))
+            foreach (FieldBrick fieldBrick in field.Elements.Where(e => e.GetHashCode() != field.Current.GetHashCode()))
             {
-                if (TouchPoints<T>.Touch(TouchPoints<T>.Points(field.Current.Brick, field.Current.Position),
-                                         TouchPoints<T>.Points(fieldBrick.Brick, fieldBrick.Position), Direction.Down))
+                if (TouchPoints.Touch(TouchPoints.Points(field.Current.Brick, field.Current.Position),
+                                         TouchPoints.Points(fieldBrick.Brick, fieldBrick.Position), Direction.Down))
                 {
                     return false;
                 }

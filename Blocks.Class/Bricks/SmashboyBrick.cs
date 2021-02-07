@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Blocks.Class.Bricks
 {
-    public class SmashboyBrick<T> : BaseBrick<T>
+    public class SmashboyBrick : BaseBrick
     {
         public SmashboyBrick()
         {

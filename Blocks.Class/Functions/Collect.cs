@@ -6,11 +6,11 @@ using System.Text;
 
 namespace Blocks.Class.Functions
 {
-    public class Collect<T>
+    public class Collect
     {
-        private Field<T> field;
+        private Field field;
 
-        public Collect(Field<T> field)
+        public Collect(Field field)
         {
             this.field = field;
         }

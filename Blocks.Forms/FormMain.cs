@@ -33,7 +33,8 @@ namespace Blocks.Forms
             Color.DarkBlue
         };
 
-        private Field<Color> field;
+        private Field field;
+        private Random random = new Random();
 
         private SoundPlayer player = new SoundPlayer()
         {
@@ -47,7 +48,7 @@ namespace Blocks.Forms
             this.pictureBoxBlocks.Width -= this.pictureBoxBlocks.Width % BRICK_SIZE - 2;
             this.pictureBoxBlocks.Height -= this.pictureBoxBlocks.Height % BRICK_SIZE - 2;
 
-            this.field = new Field<Color>(this.pictureBoxBlocks.Width / BRICK_SIZE, this.pictureBoxBlocks.Height / BRICK_SIZE);
+            this.field = new Field(this.pictureBoxBlocks.Width / BRICK_SIZE, this.pictureBoxBlocks.Height / BRICK_SIZE);
         }
 
         private void pictureBoxBlocks_Paint(object sender, PaintEventArgs e)
@@ -55,7 +56,19 @@ namespace Blocks.Forms
             Graphics dev = e.Graphics;
             dev.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
-            foreach (FieldBrick<Color> item in this.field.Elements)
+            if(this.checkBoxGrid.Checked)
+            {
+                for (int y = 0; y <= this.field.Size.Height; y++)
+                {
+                    dev.DrawLine(Pens.LightGray, 0, (y * BRICK_SIZE), (this.field.Size.Width * BRICK_SIZE), (y * BRICK_SIZE));
+                }
+                for (int x = 0; x <= this.field.Size.Width; x++)
+                {
+                    dev.DrawLine(Pens.LightGray, (x * BRICK_SIZE), 0, (x * BRICK_SIZE), (this.field.Size.Height * BRICK_SIZE));
+                }
+            }
+
+            foreach (FieldBrick item in this.field.Elements)
             {
                 for (int y = 0; y < item.Brick.Height; y++)
                 {
@@ -65,7 +78,7 @@ namespace Blocks.Forms
 
                         if (item.Brick.Appearance[y, x])
                         {
-                            dev.FillRectangle(new SolidBrush(item.Brick.Color), rectantle);
+                            dev.FillRectangle(new SolidBrush(item.Color), rectantle);
 
                             rectantle.X -= 1;
                             rectantle.Y -= 1;
@@ -79,6 +92,40 @@ namespace Blocks.Forms
             }
         }
 
+        private void groupBoxRanking_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics dev = e.Graphics;
+            dev.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+
+            if (this.field.Next is null)
+                return;
+
+            int brickSize = (int)(this.groupBoxRanking.Height / 2.0 - this.groupBoxRanking.Height * 0.2);
+            int xStart = (int)((this.groupBoxRanking.Width / 2.0) - (brickSize * (this.field.Next.Brick.Width / 2.0)));
+            int yStart = (int)((this.groupBoxRanking.Height / 2.0) - (brickSize * (this.field.Next.Brick.Height / 2.0)));
+
+            for (int y = 0; y < this.field.Next.Brick.Height; y++)
+            {
+                for (int x = 0; x < this.field.Next.Brick.Width; x++)
+                {
+
+                    Rectangle rectantle = new Rectangle((xStart + (x * brickSize)), (yStart + (y * brickSize)), (brickSize - 2), (brickSize - 2));
+
+                    if (this.field.Next.Brick.Appearance[y, x])
+                    {
+                        dev.FillRectangle(new SolidBrush(field.Next.Color), rectantle);
+
+                        rectantle.X -= 1;
+                        rectantle.Y -= 1;
+                        rectantle.Width = brickSize;
+                        rectantle.Height = brickSize;
+
+                        dev.DrawRectangle(Pens.Gray, rectantle);
+                    }
+                }
+            }
+        }
+
         private void buttonStart_Click(object sender, EventArgs e)
         {
             this.timerInterval.Enabled = true;
@@ -86,6 +133,7 @@ namespace Blocks.Forms
 
             this.comboBoxLevel.Enabled = false;
             this.checkBoxSound.Enabled = false;
+            this.checkBoxGrid.Enabled = false;
             this.buttonStart.Enabled = false;
         }
 
@@ -115,49 +163,10 @@ namespace Blocks.Forms
         {
             if (this.field.Tick())
             {
-                Random r = new Random();
-
-                Color c = this.colors.ElementAt(r.Next(0, (this.colors.Count - 1)));
-
-                switch (r.Next(0, 5))
-                {
-                    case 1:
-                        this.field.Add(new BlueRickyBrick<Color>()
-                        {
-                            Color = c
-                        });
-                        break;
-                    case 2:
-                        this.field.Add(new ClevelandBrick<Color>()
-                        {
-                            Color = c
-                        });
-                        break;
-                    case 3:
-                        this.field.Add(new HeroBrick<Color>()
-                        {
-                            Color = c
-                        });
-                        break;
-                    case 4:
-                        this.field.Add(new OrangeRickyBrick<Color>()
-                        {
-                            Color = c
-                        });
-                        break;
-                    case 5:
-                        this.field.Add(new RhodeIslandBrick<Color>()
-                        {
-                            Color = c
-                        });
-                        break;
-                    default:
-                        this.field.Add(new SmashboyBrick<Color>()
-                        {
-                            Color = c
-                        });
-                        break;
-                }
+                this.field.CreateBrick(colors);
+                
+                if(!(this.field.Next is null))
+                    this.groupBoxRanking.Invalidate();
             }
 
             this.pictureBoxBlocks.Invalidate();
@@ -165,10 +174,17 @@ namespace Blocks.Forms
 
         private void checkBoxSound_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.checkBoxSound.Checked)
-                player.PlayLooping();
-            else
-                player.Stop();
+            try
+            {
+                if (this.checkBoxSound.Checked)
+                    player.PlayLooping();
+                else
+                    player.Stop();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

@@ -6,9 +6,9 @@ using System.Text;
 
 namespace Blocks.Class.Functions
 {
-    public static class TouchPoints<T>
+    public static class TouchPoints
     {
-        public static List<Point> Points(BaseBrick<T> brick, Point position)
+        public static List<Point> Points(BaseBrick brick, Point position)
         {
             List<Point> currentBlock = new List<Point>();
 

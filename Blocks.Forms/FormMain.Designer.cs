@@ -44,6 +44,7 @@ namespace Blocks.Forms
             this.linkLabelGithub = new System.Windows.Forms.LinkLabel();
             this.groupBoxRanking = new System.Windows.Forms.GroupBox();
             this.groupBoxSettings = new System.Windows.Forms.GroupBox();
+            this.checkBoxGrid = new System.Windows.Forms.CheckBox();
             this.buttonStart = new System.Windows.Forms.Button();
             this.checkBoxSound = new System.Windows.Forms.CheckBox();
             this.comboBoxLevel = new System.Windows.Forms.ComboBox();
@@ -156,17 +157,19 @@ namespace Blocks.Forms
             // 
             // groupBoxRanking
             // 
-            this.groupBoxRanking.Location = new System.Drawing.Point(282, 124);
+            this.groupBoxRanking.Location = new System.Drawing.Point(281, 148);
             this.groupBoxRanking.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxRanking.Name = "groupBoxRanking";
             this.groupBoxRanking.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxRanking.Size = new System.Drawing.Size(236, 100);
             this.groupBoxRanking.TabIndex = 3;
             this.groupBoxRanking.TabStop = false;
-            this.groupBoxRanking.Text = "Ranking";
+            this.groupBoxRanking.Text = "Next";
+            this.groupBoxRanking.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBoxRanking_Paint);
             // 
             // groupBoxSettings
             // 
+            this.groupBoxSettings.Controls.Add(this.checkBoxGrid);
             this.groupBoxSettings.Controls.Add(this.buttonStart);
             this.groupBoxSettings.Controls.Add(this.checkBoxSound);
             this.groupBoxSettings.Controls.Add(this.comboBoxLevel);
@@ -174,14 +177,25 @@ namespace Blocks.Forms
             this.groupBoxSettings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxSettings.Name = "groupBoxSettings";
             this.groupBoxSettings.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxSettings.Size = new System.Drawing.Size(236, 100);
+            this.groupBoxSettings.Size = new System.Drawing.Size(236, 124);
             this.groupBoxSettings.TabIndex = 1;
             this.groupBoxSettings.TabStop = false;
             this.groupBoxSettings.Text = "Settings";
             // 
+            // checkBoxGrid
+            // 
+            this.checkBoxGrid.AutoSize = true;
+            this.checkBoxGrid.Location = new System.Drawing.Point(6, 69);
+            this.checkBoxGrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkBoxGrid.Name = "checkBoxGrid";
+            this.checkBoxGrid.Size = new System.Drawing.Size(48, 19);
+            this.checkBoxGrid.TabIndex = 3;
+            this.checkBoxGrid.Text = "Grid";
+            this.checkBoxGrid.UseVisualStyleBackColor = true;
+            // 
             // buttonStart
             // 
-            this.buttonStart.Location = new System.Drawing.Point(6, 68);
+            this.buttonStart.Location = new System.Drawing.Point(6, 92);
             this.buttonStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(82, 22);
@@ -285,6 +299,7 @@ namespace Blocks.Forms
         private System.Windows.Forms.ComboBox comboBoxLevel;
         private System.Windows.Forms.PictureBox pictureBoxBlocks;
         private System.Windows.Forms.Timer timerInterval;
+        private System.Windows.Forms.CheckBox checkBoxGrid;
     }
 }
 
