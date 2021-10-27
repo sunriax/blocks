@@ -1,0 +1,801 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;labelLeftOptional.Name" xml:space="preserve">
+    <value>labelLeftOptional</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="labelRightOptional.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 23</value>
+  </data>
+  <data name="&gt;&gt;labelLeftOptional.Parent" xml:space="preserve">
+    <value>groupBoxLeft</value>
+  </data>
+  <data name="&gt;&gt;labelPauseOptional.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelLeftStandard.Name" xml:space="preserve">
+    <value>labelLeftStandard</value>
+  </data>
+  <data name="pictureBoxBrick.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 45</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelLeftStandard.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelPauseStandard.Parent" xml:space="preserve">
+    <value>groupBoxPause</value>
+  </data>
+  <data name="labelPauseOptional.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="textBoxRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 23</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLeft.Name" xml:space="preserve">
+    <value>groupBoxLeft</value>
+  </data>
+  <data name="labelLeftOptional.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="groupBoxRotate.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="buttonDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 245</value>
+  </data>
+  <data name="groupBoxRight.Text" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;labelLeftOptional.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelRotateOptional.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;textBoxRotate.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pictureBoxLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 53</value>
+  </data>
+  <data name="&gt;&gt;textBoxLeft.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;groupBoxKeys.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBoxDown.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelRotateStandard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelPauseOptional.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelDownStandard.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBoxRotate.Name" xml:space="preserve">
+    <value>textBoxRotate</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxBrick.Parent" xml:space="preserve">
+    <value>groupBoxKeys</value>
+  </data>
+  <data name="labelRightOptional.Text" xml:space="preserve">
+    <value>Optional</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>595, 305</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBoxPause.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="groupBoxDown.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBoxPause.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelLeftOptional.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelPauseStandard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 51</value>
+  </data>
+  <data name="&gt;&gt;buttonDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBoxRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="pictureBoxRight.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="labelRotateStandard.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="labelRotateOptional.Text" xml:space="preserve">
+    <value>Optional</value>
+  </data>
+  <data name="labelDownStandard.Text" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="textBoxDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 23</value>
+  </data>
+  <data name="&gt;&gt;textBoxRight.Parent" xml:space="preserve">
+    <value>groupBoxRight</value>
+  </data>
+  <data name="pictureBoxRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 51</value>
+  </data>
+  <data name="groupBoxKeys.Text" xml:space="preserve">
+    <value>Standard/Optional Keys</value>
+  </data>
+  <data name="labelPauseOptional.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 22</value>
+  </data>
+  <data name="&gt;&gt;groupBoxRight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 24</value>
+  </data>
+  <data name="labelDownOptional.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="buttonDefault.Text" xml:space="preserve">
+    <value>System defaults</value>
+  </data>
+  <data name="buttonDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 23</value>
+  </data>
+  <data name="&gt;&gt;textBoxRight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBoxRotate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 100</value>
+  </data>
+  <data name="textBoxLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 23</value>
+  </data>
+  <data name="labelRightOptional.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 22</value>
+  </data>
+  <data name="&gt;&gt;textBoxDown.Parent" xml:space="preserve">
+    <value>groupBoxDown</value>
+  </data>
+  <data name="&gt;&gt;labelRightOptional.Parent" xml:space="preserve">
+    <value>groupBoxRight</value>
+  </data>
+  <data name="pictureBoxPause.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 30</value>
+  </data>
+  <data name="&gt;&gt;labelRotateStandard.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLeft.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelRotateStandard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 29</value>
+  </data>
+  <data name="labelPauseStandard.Text" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="&gt;&gt;groupBoxKeys.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelRotateStandard.Name" xml:space="preserve">
+    <value>labelRotateStandard</value>
+  </data>
+  <data name="&gt;&gt;labelPauseStandard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonFocus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxDown.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pictureBoxBrick.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxRotateOptional.Parent" xml:space="preserve">
+    <value>groupBoxRotate</value>
+  </data>
+  <data name="labelDownStandard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 51</value>
+  </data>
+  <data name="labelRightOptional.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="textBoxRotate.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;labelPauseStandard.Name" xml:space="preserve">
+    <value>labelPauseStandard</value>
+  </data>
+  <data name="labelPauseStandard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 30</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDown.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="pictureBoxDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 51</value>
+  </data>
+  <data name="&gt;&gt;labelDownOptional.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureBoxRotateOptional.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxRotateOptional.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelPauseOptional.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 23</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Game Handling</value>
+  </data>
+  <data name="labelRightOptional.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="groupBoxLeft.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelLeftStandard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 53</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDown.Parent" xml:space="preserve">
+    <value>groupBoxKeys</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxLeft.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelRightOptional.Name" xml:space="preserve">
+    <value>labelRightOptional</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxRight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDown.Name" xml:space="preserve">
+    <value>groupBoxDown</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxBrick.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;buttonFocus.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelRotateOptional.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelDownOptional.Parent" xml:space="preserve">
+    <value>groupBoxDown</value>
+  </data>
+  <data name="&gt;&gt;textBoxDown.Name" xml:space="preserve">
+    <value>textBoxDown</value>
+  </data>
+  <data name="labelLeftStandard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 30</value>
+  </data>
+  <data name="labelPauseStandard.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxRight.Parent" xml:space="preserve">
+    <value>groupBoxRight</value>
+  </data>
+  <data name="pictureBoxPause.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 51</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelDownOptional.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 22</value>
+  </data>
+  <data name="&gt;&gt;groupBoxRotate.Parent" xml:space="preserve">
+    <value>groupBoxKeys</value>
+  </data>
+  <data name="textBoxPause.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 24</value>
+  </data>
+  <data name="pictureBoxDown.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBoxKeys.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelDownStandard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 30</value>
+  </data>
+  <data name="&gt;&gt;groupBoxKeys.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxRotateOptional.Name" xml:space="preserve">
+    <value>pictureBoxRotateOptional</value>
+  </data>
+  <data name="labelRotateStandard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 52</value>
+  </data>
+  <data name="labelRotateStandard.Text" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="pictureBoxLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLeft.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxRight.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;buttonDefault.Parent" xml:space="preserve">
+    <value>groupBoxKeys</value>
+  </data>
+  <data name="&gt;&gt;labelPauseOptional.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelLeftStandard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelRightOptional.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonFocus.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="groupBoxRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 33</value>
+  </data>
+  <data name="textBoxLeft.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;textBoxPause.Name" xml:space="preserve">
+    <value>textBoxPause</value>
+  </data>
+  <data name="&gt;&gt;textBoxRotate.Parent" xml:space="preserve">
+    <value>groupBoxRotate</value>
+  </data>
+  <data name="pictureBoxLeft.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelRightStandard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxRotate.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelRotateOptional.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 22</value>
+  </data>
+  <data name="&gt;&gt;textBoxDown.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelRotateOptional.Parent" xml:space="preserve">
+    <value>groupBoxRotate</value>
+  </data>
+  <data name="&gt;&gt;labelDownStandard.Parent" xml:space="preserve">
+    <value>groupBoxDown</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxPause.Parent" xml:space="preserve">
+    <value>groupBoxPause</value>
+  </data>
+  <data name="groupBoxLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 33</value>
+  </data>
+  <data name="labelLeftOptional.Text" xml:space="preserve">
+    <value>Optional</value>
+  </data>
+  <data name="textBoxLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 24</value>
+  </data>
+  <data name="&gt;&gt;groupBoxRight.Name" xml:space="preserve">
+    <value>groupBoxRight</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxLeft.Name" xml:space="preserve">
+    <value>pictureBoxLeft</value>
+  </data>
+  <data name="&gt;&gt;groupBoxRotate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxDown.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="pictureBoxDown.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="labelRightStandard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 52</value>
+  </data>
+  <data name="&gt;&gt;textBoxLeft.Parent" xml:space="preserve">
+    <value>groupBoxLeft</value>
+  </data>
+  <data name="&gt;&gt;labelLeftStandard.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelDownStandard.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelRightStandard.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelRotateOptional.Name" xml:space="preserve">
+    <value>labelRotateOptional</value>
+  </data>
+  <data name="&gt;&gt;buttonFocus.Parent" xml:space="preserve">
+    <value>groupBoxKeys</value>
+  </data>
+  <data name="pictureBoxPause.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelPauseStandard.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="labelRotateStandard.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelRightStandard.Parent" xml:space="preserve">
+    <value>groupBoxRight</value>
+  </data>
+  <data name="&gt;&gt;groupBoxPause.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelLeftStandard.Parent" xml:space="preserve">
+    <value>groupBoxLeft</value>
+  </data>
+  <data name="&gt;&gt;textBoxDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBoxKeys.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="textBoxRight.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="labelRightStandard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 29</value>
+  </data>
+  <data name="groupBoxPause.Text" xml:space="preserve">
+    <value>Pause</value>
+  </data>
+  <data name="textBoxLeft.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBoxPause.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 23</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxDown.Name" xml:space="preserve">
+    <value>pictureBoxDown</value>
+  </data>
+  <data name="labelDownOptional.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;labelRightOptional.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBoxDown.Text" xml:space="preserve">
+    <value>Down</value>
+  </data>
+  <data name="&gt;&gt;groupBoxRotate.Name" xml:space="preserve">
+    <value>groupBoxRotate</value>
+  </data>
+  <data name="buttonFocus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 245</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="labelRotateOptional.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 23</value>
+  </data>
+  <data name="labelLeftOptional.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 23</value>
+  </data>
+  <data name="&gt;&gt;textBoxRight.Name" xml:space="preserve">
+    <value>textBoxRight</value>
+  </data>
+  <data name="pictureBoxRotateOptional.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="&gt;&gt;textBoxPause.Parent" xml:space="preserve">
+    <value>groupBoxPause</value>
+  </data>
+  <data name="pictureBoxRight.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="buttonFocus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 23</value>
+  </data>
+  <data name="pictureBoxRotateOptional.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 51</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxBrick.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelDownOptional.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 23</value>
+  </data>
+  <data name="&gt;&gt;groupBoxPause.Name" xml:space="preserve">
+    <value>groupBoxPause</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxPause.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxRight.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;groupBoxPause.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxPause.Name" xml:space="preserve">
+    <value>pictureBoxPause</value>
+  </data>
+  <data name="&gt;&gt;labelRightStandard.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBoxPause.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;textBoxLeft.Name" xml:space="preserve">
+    <value>textBoxLeft</value>
+  </data>
+  <data name="&gt;&gt;labelRotateOptional.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelRotateOptional.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxRight.Name" xml:space="preserve">
+    <value>pictureBoxRight</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxRight.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBoxRotate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 139</value>
+  </data>
+  <data name="pictureBoxLeft.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="groupBoxPause.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="textBoxRotate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 23</value>
+  </data>
+  <data name="&gt;&gt;labelPauseStandard.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelPauseOptional.Parent" xml:space="preserve">
+    <value>groupBoxPause</value>
+  </data>
+  <data name="&gt;&gt;buttonDefault.Name" xml:space="preserve">
+    <value>buttonDefault</value>
+  </data>
+  <data name="&gt;&gt;labelRightStandard.Name" xml:space="preserve">
+    <value>labelRightStandard</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormHandling</value>
+  </data>
+  <data name="&gt;&gt;textBoxRight.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelRightStandard.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="groupBoxRotate.Text" xml:space="preserve">
+    <value>Rotate</value>
+  </data>
+  <data name="labelLeftStandard.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="labelDownOptional.Text" xml:space="preserve">
+    <value>Optional</value>
+  </data>
+  <data name="&gt;&gt;groupBoxRight.Parent" xml:space="preserve">
+    <value>groupBoxKeys</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxBrick.Name" xml:space="preserve">
+    <value>pictureBoxBrick</value>
+  </data>
+  <data name="groupBoxDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 100</value>
+  </data>
+  <data name="&gt;&gt;labelDownOptional.Name" xml:space="preserve">
+    <value>labelDownOptional</value>
+  </data>
+  <data name="&gt;&gt;groupBoxPause.Parent" xml:space="preserve">
+    <value>groupBoxKeys</value>
+  </data>
+  <data name="&gt;&gt;labelDownOptional.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxLeft.Parent" xml:space="preserve">
+    <value>groupBoxLeft</value>
+  </data>
+  <data name="groupBoxLeft.Text" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="textBoxPause.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBoxRotate.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBoxPause.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 139</value>
+  </data>
+  <data name="&gt;&gt;labelRotateStandard.Parent" xml:space="preserve">
+    <value>groupBoxRotate</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLeft.Parent" xml:space="preserve">
+    <value>groupBoxKeys</value>
+  </data>
+  <data name="&gt;&gt;labelDownStandard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBoxPause.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 100</value>
+  </data>
+  <data name="&gt;&gt;buttonFocus.Name" xml:space="preserve">
+    <value>buttonFocus</value>
+  </data>
+  <data name="textBoxDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 22</value>
+  </data>
+  <data name="groupBoxRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 100</value>
+  </data>
+  <data name="pictureBoxBrick.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 81</value>
+  </data>
+  <data name="groupBoxLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 100</value>
+  </data>
+  <data name="textBoxRotate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 24</value>
+  </data>
+  <data name="labelLeftOptional.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 24</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxLeft.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxPause.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBoxDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 139</value>
+  </data>
+  <data name="pictureBoxDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="&gt;&gt;labelLeftOptional.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelDownStandard.Name" xml:space="preserve">
+    <value>labelDownStandard</value>
+  </data>
+  <data name="labelPauseOptional.Text" xml:space="preserve">
+    <value>Optional</value>
+  </data>
+  <data name="pictureBoxRotateOptional.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelDownStandard.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;textBoxPause.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonDefault.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxRight.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxRotateOptional.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxKeys.Name" xml:space="preserve">
+    <value>groupBoxKeys</value>
+  </data>
+  <data name="buttonDefault.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;textBoxLeft.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBoxKeys.Size" type="System.Drawing.Size, System.Drawing">
+    <value>569, 280</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxDown.Parent" xml:space="preserve">
+    <value>groupBoxDown</value>
+  </data>
+  <data name="&gt;&gt;textBoxRotate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelRightStandard.Text" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="labelLeftStandard.Text" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="&gt;&gt;labelPauseOptional.Name" xml:space="preserve">
+    <value>labelPauseOptional</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

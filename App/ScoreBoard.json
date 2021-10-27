@@ -1,0 +1,14 @@
+{
+  "Entries": [
+    {
+      "Name": "NoName",
+      "Score": 1,
+      "Checksum": "814BB5B117D901CAF5339F68E0448D626F0E6F8BD4C58144B03C86B2CFEAEC3A"
+    },
+    {
+      "Name": "Invalid",
+      "Score": 1000,
+      "Checksum": "..."
+    }
+  ]
+}

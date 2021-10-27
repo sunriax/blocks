@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Ragae.Game.Blocks.GameLib</AssemblyName>
+    <RootNamespace>Ragae.Game.Blocks.GameLib</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BrickLib\BrickLib.csproj" />
+    <ProjectReference Include="..\DataLib\DataLib.csproj" />
+  </ItemGroup>
+
+</Project>

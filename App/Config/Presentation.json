@@ -1,0 +1,13 @@
+{
+  "Grid": "#cacaca",
+  "Background": "#ffffff",
+  "Blocks": [
+    "#c0392b",
+    "#8e44ad",
+    "#2471a3",
+    "#229954",
+    "#f1c40f",
+    "#e67e22",
+    "#5d6d7e"
+  ]
+}

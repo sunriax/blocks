@@ -1,0 +1,557 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="buttonDefault.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="textBoxFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 22</value>
+  </data>
+  <data name="textBoxGameOver.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 138</value>
+  </data>
+  <data name="&gt;&gt;labelGame.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonGameOverFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 23</value>
+  </data>
+  <data name="&gt;&gt;textBoxFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonFolder.Parent" xml:space="preserve">
+    <value>groupBoxAudioFiles</value>
+  </data>
+  <data name="&gt;&gt;buttonGameOverPlay.Parent" xml:space="preserve">
+    <value>groupBoxAudioFiles</value>
+  </data>
+  <data name="&gt;&gt;textBoxGameOver.Parent" xml:space="preserve">
+    <value>groupBoxAudioFiles</value>
+  </data>
+  <data name="textBoxFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="buttonGameFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 50</value>
+  </data>
+  <data name="&gt;&gt;buttonPausePlay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxGame.Parent" xml:space="preserve">
+    <value>groupBoxAudioFiles</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormSound</value>
+  </data>
+  <data name="labelGame.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 51</value>
+  </data>
+  <data name="textBoxGame.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 51</value>
+  </data>
+  <data name="&gt;&gt;buttonPausePlay.Parent" xml:space="preserve">
+    <value>groupBoxAudioFiles</value>
+  </data>
+  <data name="textBoxGame.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBoxAudioFiles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="labelPause.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;buttonGameOverPlay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelGame.Text" xml:space="preserve">
+    <value>Game:</value>
+  </data>
+  <data name="&gt;&gt;buttonMultiRowPlay.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;textBoxGameOver.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBoxAudioFiles.Text" xml:space="preserve">
+    <value>Audio Files</value>
+  </data>
+  <data name="buttonPauseFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 109</value>
+  </data>
+  <data name="&gt;&gt;textBoxGame.Name" xml:space="preserve">
+    <value>textBoxGame</value>
+  </data>
+  <data name="&gt;&gt;labelMultiRow.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="labelMultiRow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 79</value>
+  </data>
+  <data name="buttonPausePlay.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="textBoxMultiRow.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;labelPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 193</value>
+  </data>
+  <data name="&gt;&gt;buttonMultiRowFile.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="buttonGameOverFile.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="buttonGameOverFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 138</value>
+  </data>
+  <data name="&gt;&gt;groupBoxAudioFiles.Name" xml:space="preserve">
+    <value>groupBoxAudioFiles</value>
+  </data>
+  <data name="labelPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 22</value>
+  </data>
+  <data name="&gt;&gt;buttonDefault.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxMultiRow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxFolder.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="labelPath.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;labelMultiRow.Parent" xml:space="preserve">
+    <value>groupBoxAudioFiles</value>
+  </data>
+  <data name="textBoxGameOver.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 23</value>
+  </data>
+  <data name="buttonMultiRowPlay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 23</value>
+  </data>
+  <data name="&gt;&gt;labelPath.Parent" xml:space="preserve">
+    <value>groupBoxAudioFiles</value>
+  </data>
+  <data name="&gt;&gt;buttonFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxPause.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 109</value>
+  </data>
+  <data name="buttonPauseFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 23</value>
+  </data>
+  <data name="labelPause.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 108</value>
+  </data>
+  <data name="labelGameOver.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;buttonGameOverFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelPause.Text" xml:space="preserve">
+    <value>Pause:</value>
+  </data>
+  <data name="&gt;&gt;buttonGameOverPlay.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;buttonMultiRowFile.Name" xml:space="preserve">
+    <value>buttonMultiRowFile</value>
+  </data>
+  <data name="&gt;&gt;groupBoxAudioFiles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonFolder.Name" xml:space="preserve">
+    <value>buttonFolder</value>
+  </data>
+  <data name="&gt;&gt;labelGameOver.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxFolder.Parent" xml:space="preserve">
+    <value>groupBoxAudioFiles</value>
+  </data>
+  <data name="&gt;&gt;labelPause.Parent" xml:space="preserve">
+    <value>groupBoxAudioFiles</value>
+  </data>
+  <data name="buttonFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 21</value>
+  </data>
+  <data name="labelGame.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;textBoxGameOver.Name" xml:space="preserve">
+    <value>textBoxGameOver</value>
+  </data>
+  <data name="textBoxMultiRow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 80</value>
+  </data>
+  <data name="&gt;&gt;labelPath.Name" xml:space="preserve">
+    <value>labelPath</value>
+  </data>
+  <data name="&gt;&gt;groupBoxAudioFiles.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelPause.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;buttonGamePlay.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;buttonGameFile.Name" xml:space="preserve">
+    <value>buttonGameFile</value>
+  </data>
+  <data name="&gt;&gt;buttonPauseFile.Name" xml:space="preserve">
+    <value>buttonPauseFile</value>
+  </data>
+  <data name="&gt;&gt;labelMultiRow.Name" xml:space="preserve">
+    <value>labelMultiRow</value>
+  </data>
+  <data name="&gt;&gt;buttonDefault.Name" xml:space="preserve">
+    <value>buttonDefault</value>
+  </data>
+  <data name="&gt;&gt;textBoxFolder.Name" xml:space="preserve">
+    <value>textBoxFolder</value>
+  </data>
+  <data name="textBoxMultiRow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 23</value>
+  </data>
+  <data name="groupBoxAudioFiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 174</value>
+  </data>
+  <data name="labelPause.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 23</value>
+  </data>
+  <data name="buttonPauseFile.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;buttonGameOverPlay.Name" xml:space="preserve">
+    <value>buttonGameOverPlay</value>
+  </data>
+  <data name="&gt;&gt;buttonGameFile.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="buttonDefault.Text" xml:space="preserve">
+    <value>System defaults</value>
+  </data>
+  <data name="&gt;&gt;buttonMultiRowFile.Parent" xml:space="preserve">
+    <value>groupBoxAudioFiles</value>
+  </data>
+  <data name="textBoxPause.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;buttonMultiRowPlay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxMultiRow.Name" xml:space="preserve">
+    <value>textBoxMultiRow</value>
+  </data>
+  <data name="&gt;&gt;textBoxPause.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="buttonPausePlay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 23</value>
+  </data>
+  <data name="&gt;&gt;labelGameOver.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBoxPause.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 226</value>
+  </data>
+  <data name="buttonMultiRowFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 80</value>
+  </data>
+  <data name="&gt;&gt;labelGame.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="buttonGameOverPlay.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="labelPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 23</value>
+  </data>
+  <data name="&gt;&gt;buttonMultiRowPlay.Name" xml:space="preserve">
+    <value>buttonMultiRowPlay</value>
+  </data>
+  <data name="labelMultiRow.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;buttonMultiRowFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonGameOverFile.Name" xml:space="preserve">
+    <value>buttonGameOverFile</value>
+  </data>
+  <data name="&gt;&gt;labelGameOver.Name" xml:space="preserve">
+    <value>labelGameOver</value>
+  </data>
+  <data name="buttonDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 23</value>
+  </data>
+  <data name="&gt;&gt;buttonGamePlay.Parent" xml:space="preserve">
+    <value>groupBoxAudioFiles</value>
+  </data>
+  <data name="labelPath.Text" xml:space="preserve">
+    <value>Path:</value>
+  </data>
+  <data name="buttonGamePlay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>334, 50</value>
+  </data>
+  <data name="buttonPausePlay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>334, 109</value>
+  </data>
+  <data name="&gt;&gt;labelPause.Name" xml:space="preserve">
+    <value>labelPause</value>
+  </data>
+  <data name="buttonMultiRowPlay.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Sound Settings</value>
+  </data>
+  <data name="buttonMultiRowFile.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;buttonGameFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelGameOver.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;labelPath.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="labelMultiRow.Text" xml:space="preserve">
+    <value>Multi Row:</value>
+  </data>
+  <data name="&gt;&gt;labelMultiRow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 23</value>
+  </data>
+  <data name="labelPause.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;labelGame.Name" xml:space="preserve">
+    <value>labelGame</value>
+  </data>
+  <data name="&gt;&gt;buttonGameFile.Parent" xml:space="preserve">
+    <value>groupBoxAudioFiles</value>
+  </data>
+  <data name="buttonMultiRowFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 23</value>
+  </data>
+  <data name="&gt;&gt;buttonMultiRowPlay.Parent" xml:space="preserve">
+    <value>groupBoxAudioFiles</value>
+  </data>
+  <data name="&gt;&gt;textBoxGame.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelGame.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 23</value>
+  </data>
+  <data name="&gt;&gt;buttonGamePlay.Name" xml:space="preserve">
+    <value>buttonGamePlay</value>
+  </data>
+  <data name="&gt;&gt;labelPause.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonPausePlay.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBoxGame.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;groupBoxAudioFiles.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="buttonGamePlay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 23</value>
+  </data>
+  <data name="buttonGameOverPlay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>334, 138</value>
+  </data>
+  <data name="&gt;&gt;buttonDefault.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonGamePlay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonFolder.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;buttonGameOverFile.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;buttonGameOverFile.Parent" xml:space="preserve">
+    <value>groupBoxAudioFiles</value>
+  </data>
+  <data name="labelPath.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;buttonPausePlay.Name" xml:space="preserve">
+    <value>buttonPausePlay</value>
+  </data>
+  <data name="textBoxFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 23</value>
+  </data>
+  <data name="&gt;&gt;textBoxPause.Name" xml:space="preserve">
+    <value>textBoxPause</value>
+  </data>
+  <data name="textBoxGameOver.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="groupBoxAudioFiles.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="buttonGameFile.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelMultiRow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 23</value>
+  </data>
+  <data name="buttonGamePlay.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelGame.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="textBoxGame.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 23</value>
+  </data>
+  <data name="&gt;&gt;textBoxPause.Parent" xml:space="preserve">
+    <value>groupBoxAudioFiles</value>
+  </data>
+  <data name="buttonMultiRowPlay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>334, 80</value>
+  </data>
+  <data name="&gt;&gt;buttonDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonGameOverPlay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 23</value>
+  </data>
+  <data name="&gt;&gt;labelGame.Parent" xml:space="preserve">
+    <value>groupBoxAudioFiles</value>
+  </data>
+  <data name="&gt;&gt;buttonPauseFile.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;buttonPauseFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxMultiRow.Parent" xml:space="preserve">
+    <value>groupBoxAudioFiles</value>
+  </data>
+  <data name="&gt;&gt;textBoxGameOver.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelMultiRow.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="buttonFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelGameOver.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 23</value>
+  </data>
+  <data name="&gt;&gt;buttonPauseFile.Parent" xml:space="preserve">
+    <value>groupBoxAudioFiles</value>
+  </data>
+  <data name="labelGameOver.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 137</value>
+  </data>
+  <data name="labelGameOver.Text" xml:space="preserve">
+    <value>Game Over:</value>
+  </data>
+  <data name="&gt;&gt;textBoxMultiRow.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="buttonGameFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 23</value>
+  </data>
+  <data name="&gt;&gt;labelGameOver.Parent" xml:space="preserve">
+    <value>groupBoxAudioFiles</value>
+  </data>
+  <data name="textBoxPause.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 23</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>
