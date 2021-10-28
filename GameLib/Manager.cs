@@ -70,7 +70,7 @@ namespace Ragae.Game.Blocks.GameLib
                     if (this.Field.MegaLine())
                         megaLine = true;
 
-                    this.Score += (this.Level + 1) * this.Field.Width * (megaLine ? 4 * 10 : this.Field.FullLines().Count());
+                    this.Score += (this.Level + 1) * this.Field.Size.Width * (megaLine ? 4 * 10 : this.Field.FullLines().Count());
 
                     // Remove FullLines
                     this.Field.FullLines().ToList().ForEach(x => this.Field.Line.Remove(x));
@@ -192,7 +192,7 @@ namespace Ragae.Game.Blocks.GameLib
 
         public void Pause() => this.timer.Stop();
 
-        public bool GameEnd => this.Field.Line.Count > (this.Field.Height + 1) ? true : false;
+        public bool GameEnd => this.Field.Line.Count > (this.Field.Size.Height + 1) ? true : false;
 
         private Color RandomColor() => this.colors.ElementAt(RandomNumberGenerator.GetInt32(this.colors.Count));
 

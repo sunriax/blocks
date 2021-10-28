@@ -19,4 +19,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BrickLib\BrickLib.csproj" />
+    <ProjectReference Include="..\GameLib\GameLib.csproj" />
+  </ItemGroup>
+
 </Project>

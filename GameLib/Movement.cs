@@ -68,7 +68,7 @@ namespace Ragae.Game.Blocks.GameLib
                     this.Field.Current.Position = new Point(this.Field.Current.Position.X - 1, this.Field.Current.Position.Y);
                     break;
                 case Direction.Right:
-                    if (this.Field.Current.Position.X >= (this.Field.Width - this.Field.Current.Brick.Apperance.GetLength(1)))
+                    if (this.Field.Current.Position.X >= (this.Field.Size.Width - this.Field.Current.Brick.Apperance.GetLength(1)))
                         return false;
 
                     for (int y = 0; y < this.Field.Current.Brick.Apperance.GetLength(0); y++)
@@ -95,8 +95,8 @@ namespace Ragae.Game.Blocks.GameLib
 
         public bool Rotate(Rotation rotation)
         {
-            if (((this.Field.Current.Brick.Apperance.GetLength(0) + this.Field.Current.Position.X - 1) >= this.Field.Width) ||
-                ((this.Field.Current.Brick.Apperance.GetLength(1) + this.Field.Current.Position.X - 1) >= this.Field.Width))
+            if (((this.Field.Current.Brick.Apperance.GetLength(0) + this.Field.Current.Position.X - 1) >= this.Field.Size.Width) ||
+                ((this.Field.Current.Brick.Apperance.GetLength(1) + this.Field.Current.Position.X - 1) >= this.Field.Size.Width))
                 return false;
 
 

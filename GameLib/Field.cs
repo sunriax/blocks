@@ -18,52 +18,38 @@ namespace Ragae.Game.Blocks.GameLib
         public List<Item[]> Line { get; set; }
 
         public Size Size { get; private set; }
-        public int Width => this.Size.Width;
-        public int Height => this.Size.Height;
 
-        public IEnumerable<Item[]> FullLines()
-        {
-            List<Item[]> temp = new();
-
-            for (int i = 0; i < this.Line.Count; i++)
-            {
-                if (this.Line.ElementAt(i).All(x => x is not null))
-                {
-                    temp.Add(this.Line.ElementAt(i));
-                }
-            }
-
-            return temp;
-        }
+        public IEnumerable<Item[]> FullLines() => this.Line.Where(x => x.All(x => x is not null));
 
         public bool MegaLine()
         {
-            int y_last = 0;
+            int line = 1;
 
-            for (int y = 1; y <= this.Line.Count; y++)
+            for (int y = 0; y < this.Line.Count; y++)
             {
-                if (this.Line.ElementAt((y - 1)).All(x => x is not null))
+                if (this.Line.ElementAt(y).All(x => x is not null))
                 {
-                    if((y - 1) == y_last)
-                    {
-                        y_last++;
-                    }
-                    else
-                    {
-                        y_last = 0;
-                    }
+                    if (line++ == 4)
+                        return true;
+                }
+                else
+                {
+                    line = 1;
                 }
             }
-            return y_last == 4 ? true : false;
+            return false;
         }
 
-        public void Brick2Field()
+        public bool Brick2Field()
         {
+            if (this.Current is null)
+                return false;
+
             for (int y = 0; y < this.Current.Brick.Apperance.GetLength(0); y++)
             {
                 if (this.Line.ElementAtOrDefault((this.Current.Position.Y + y)) is null)
                 {
-                    this.Line.Add(new Item[(this.Width)]);
+                    this.Line.Add(new Item[(this.Size.Width)]);
                 }
 
                 for (int x = 0; x < this.Current.Brick.Apperance.GetLength(1); x++)
@@ -80,6 +66,7 @@ namespace Ragae.Game.Blocks.GameLib
                     }
                 }
             }
+            return true;
         }
     }
 

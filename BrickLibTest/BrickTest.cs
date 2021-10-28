@@ -12,19 +12,19 @@ namespace BrickLibTest
         {
             yield return new object[] { new BlueRickyBrick(), new bool[,]
             {
-                { true,  false, false },
-                { true,  true,  true  }
+                { true, false, false },
+                { true, true,  true  }
             }};
 
             yield return new object[] { new ClevelandBrick(), new bool[,]
             {
                 { true,  true,  false },
-                { false,  true,  true  }
+                { false, true,  true  }
             }};
 
             yield return new object[] { new HeroBrick(), new bool[,]
             {
-                { true,  true, true, true }
+                { true, true, true, true }
             }};
 
             yield return new object[] { new OrangeRickyBrick(), new bool[,]
@@ -35,20 +35,20 @@ namespace BrickLibTest
 
             yield return new object[] { new RhodeIslandBrick(), new bool[,]
             {
-                { true,  true },
-                { true,  true }
+                { true, true },
+                { true, true }
             }};
 
             yield return new object[] { new SmashBoyBrick(), new bool[,]
             {
-                { true,  true,  false },
-                { false,  true,  true  }
+                { false, true, true },
+                { true,  true, false  }
             }};
 
             yield return new object[] { new TeeWeeBrick(), new bool[,]
             {
-                { false,  true,  false },
-                { true,   true,  true  }
+                { false, true, false },
+                { true,  true, true  }
             }};
         }
 
@@ -103,7 +103,7 @@ namespace BrickLibTest
             {
                 for (int x = 0; x < data.GetLength(1); x++)
                 {
-                    temp[x, y] = data[y, x];
+                    temp[(data.GetLength(1) - x - 1), y] = data[y, x];
                 }
             }
             return temp;
