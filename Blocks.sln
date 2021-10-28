@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameLibTest", "GameLibTest\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppLib", "AppLib\AppLib.csproj", "{076981BD-B63D-42BF-ABF1-D5A72C9F7F55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLib", "DataLib\DataLib.csproj", "{0E17919B-BB0E-45CC-9C27-F2D66CECF144}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLib", "DataLib\DataLib.csproj", "{0E17919B-BB0E-45CC-9C27-F2D66CECF144}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

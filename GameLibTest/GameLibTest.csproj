@@ -24,4 +24,8 @@
     <ProjectReference Include="..\GameLib\GameLib.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
 </Project>

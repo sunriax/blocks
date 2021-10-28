@@ -3,6 +3,7 @@ using Ragae.Game.Blocks.GameLib.Factory;
 using System.Drawing;
 using static GameLibTest.Helper.GameLibHelper;
 using Xunit;
+using System.Collections.Generic;
 
 namespace GameLibTest
 {
@@ -21,52 +22,61 @@ namespace GameLibTest
             Assert.NotNull(movement.Field);
         }
 
-        [Fact]
-        public void CreateMovementWithEmptyFieldAndMoveDown_Passing()
+        public static IEnumerable<object[]> GetMovementData()
         {
-            Movement movement = factory.CreateMovement(factory.CreateField());
+            for (int i = 0; i < 2; i++)
+            {
+                yield return new object[]
+                {
+                    new List<Item[]>()
+                    {
+                        FillLine(10),
+                        FillLine(10),
+                        FillLine(10),
+                        FillLine(10)
+                    },
+                    i == 0 ? false : true
+                };
 
-            Assert.NotNull(movement);
-            Assert.NotNull(movement.Field);
-
-            movement.Field.Current = factory.CreateFieldBrick(Color.Red);
-            Point p = movement.Field.Current.Position;
-
-            Assert.True(movement.Down());
-            Assert.True((p.Y - 1) == movement.Field.Current.Position.Y);
+                yield return new object[]
+                {
+                    new List<Item[]>()
+                    {
+                    },
+                    i == 0 ? false : true
+                };
+            }
         }
 
-        [Fact]
-        public void CreateMovementWithEmptyFieldAndMoveToEnd_Passing()
+        [Theory]
+        [MemberData(nameof(GetMovementData))]
+        public void CreateMovementAndMoveDownWithDifferentSettings_Passing(List<Item[]> line, bool toEnd)
         {
             Movement movement = factory.CreateMovement(factory.CreateField());
+            movement.Field.Line.AddRange(line);
 
             Assert.NotNull(movement);
             Assert.NotNull(movement.Field);
 
             movement.Field.Current = factory.CreateFieldBrick(Color.Red);
 
-            while (movement.Down());
+            int i = movement.Field.Current.Position.Y;
+
+            while (movement.Down())
+            {
+                i--;
+
+                if (!toEnd)
+                    break;
+            }
+
+            Assert.Equal(toEnd, (movement.Field.Line.Count == i));
+            Assert.Equal(toEnd, (movement.Field.Line.Count == movement.Field.Current.Position.Y));
+
+            if (!toEnd)
+                return;
 
             Assert.False(movement.Down());
-            Assert.True(0 == movement.Field.Current.Position.Y);
-        }
-
-        [Fact]
-        public void CreateMovementWithFieldAndMoveToEnd_Passing()
-        {
-            Movement movement = factory.CreateMovement(factory.CreateField());
-
-            Assert.NotNull(movement);
-            Assert.NotNull(movement.Field);
-
-            movement.Field.Line.Add(FillLine(factory.Size.Width));
-            movement.Field.Current = factory.CreateFieldBrick(Color.Red);
-
-            while (movement.Down()) ;
-
-            Assert.False(movement.Down());
-            Assert.True(1 == movement.Field.Current.Position.Y);
         }
     }
 }

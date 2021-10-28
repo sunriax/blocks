@@ -6,6 +6,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <AssemblyName>Blocks</AssemblyName>
     <RootNamespace>Ragae.Game.Blocks.App</RootNamespace>
+    <ApplicationIcon>ICON.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
