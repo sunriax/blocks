@@ -1,6 +1,6 @@
-﻿using Ragae.Game.Blocks.BrickLib.Enumeration;
+﻿using RaGae.Game.Blocks.BrickLib.Enumeration;
 
-namespace Ragae.Game.Blocks.BrickLib
+namespace RaGae.Game.Blocks.BrickLib
 {
     public interface IBrick
     {

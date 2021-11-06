@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Drawing;
 
-namespace Ragae.Game.Blocks.AppLib
+namespace RaGae.Game.Blocks.DataLib.Config
 {
     public class Presentation
     {

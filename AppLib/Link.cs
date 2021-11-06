@@ -1,4 +1,6 @@
-﻿namespace Ragae.Game.Blocks.AppLib
+﻿using System.Diagnostics;
+
+namespace RaGae.Game.Blocks.AppLib
 {
     public static class Link
     {
@@ -6,7 +8,7 @@
         {
             try
             {
-                System.Diagnostics.Process.Start("cmd", "/C start" + " " + url);
+                Process.Start("cmd", "/C start" + " " + url);
                 return true;
             }
             catch { }

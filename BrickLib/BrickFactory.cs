@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Security.Cryptography;
 
-namespace Ragae.Game.Blocks.BrickLib
+namespace RaGae.Game.Blocks.BrickLib
 {
     public static class BrickFactory
     {

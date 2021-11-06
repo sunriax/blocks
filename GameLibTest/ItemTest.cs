@@ -1,4 +1,4 @@
-using Ragae.Game.Blocks.GameLib;
+using RaGae.Game.Blocks.GameLib;
 using System.Drawing;
 using Xunit;
 

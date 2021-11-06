@@ -1,5 +1,5 @@
 ﻿
-namespace Ragae.Game.Blocks.App
+namespace RaGae.Game.Blocks.App
 {
     partial class FormHandling
     {
@@ -90,7 +90,7 @@ namespace Ragae.Game.Blocks.App
             // buttonFocus
             // 
             resources.ApplyResources(this.buttonFocus, "buttonFocus");
-            this.buttonFocus.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Wizard;
+            this.buttonFocus.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Wizard;
             this.buttonFocus.Name = "buttonFocus";
             this.buttonFocus.UseVisualStyleBackColor = true;
             // 

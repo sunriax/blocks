@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Ragae.Game.Blocks.GameLib.Provider
+namespace RaGae.Game.Blocks.GameLib.Provider
 {
     public abstract class StorageProvider
     {

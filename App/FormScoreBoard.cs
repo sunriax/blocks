@@ -1,8 +1,8 @@
-﻿using Ragae.Game.Blocks.AppLib;
+﻿using RaGae.Game.Blocks.DataLib.Score;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace Ragae.Game.Blocks.App
+namespace RaGae.Game.Blocks.App
 {
     public partial class FormScoreBoard : Form
     {

@@ -1,4 +1,4 @@
-﻿using Ragae.Game.Blocks.GameLib.Provider;
+﻿using RaGae.Game.Blocks.GameLib.Provider;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Ragae.Game.Blocks.App
+namespace RaGae.Game.Blocks.App
 {
     public partial class FormOpenGame : Form
     {

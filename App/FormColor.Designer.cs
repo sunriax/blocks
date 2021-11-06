@@ -1,5 +1,5 @@
 ﻿
-namespace Ragae.Game.Blocks.App
+namespace RaGae.Game.Blocks.App
 {
     partial class FormColor
     {
@@ -88,7 +88,7 @@ namespace Ragae.Game.Blocks.App
             // buttonRemove
             // 
             resources.ApplyResources(this.buttonRemove, "buttonRemove");
-            this.buttonRemove.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Remove;
+            this.buttonRemove.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Remove;
             this.buttonRemove.Name = "buttonRemove";
             this.buttonRemove.UseVisualStyleBackColor = true;
             this.buttonRemove.Click += new System.EventHandler(this.buttonRemove_Click);
@@ -105,7 +105,7 @@ namespace Ragae.Game.Blocks.App
             // buttonAdd
             // 
             resources.ApplyResources(this.buttonAdd, "buttonAdd");
-            this.buttonAdd.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Add;
+            this.buttonAdd.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Add;
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);

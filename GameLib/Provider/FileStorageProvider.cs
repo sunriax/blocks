@@ -1,10 +1,10 @@
-﻿using Ragae.Game.Blocks.DataLib;
-using Ragae.Game.Blocks.DataLib.Converter;
+﻿using RaGae.Game.Blocks.DataLib;
+using RaGae.Game.Blocks.DataLib.Converter;
 using System;
 using System.IO;
 using System.Text.Json;
 
-namespace Ragae.Game.Blocks.GameLib.Provider
+namespace RaGae.Game.Blocks.GameLib.Provider
 {
     public class FileStorageProvider : StorageProvider
     {

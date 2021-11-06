@@ -1,16 +1,17 @@
-﻿using Ragae.Game.Blocks.AppLib;
-using Ragae.Game.Blocks.BrickLib;
-using Ragae.Game.Blocks.BrickLib.Enumeration;
-using Ragae.Game.Blocks.DataLib;
-using Ragae.Game.Blocks.GameLib;
-using Ragae.Game.Blocks.GameLib.Enumeration;
+﻿using RaGae.Game.Blocks.AppLib;
+using RaGae.Game.Blocks.BrickLib;
+using RaGae.Game.Blocks.BrickLib.Enumeration;
+using RaGae.Game.Blocks.DataLib;
+using RaGae.Game.Blocks.DataLib.Config;
+using RaGae.Game.Blocks.GameLib;
+using RaGae.Game.Blocks.GameLib.Enumeration;
 using System;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace Ragae.Game.Blocks.App
+namespace RaGae.Game.Blocks.App
 {
     public partial class FormHandling : Form
     {

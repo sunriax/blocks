@@ -1,7 +1,7 @@
-﻿using Ragae.Game.Blocks.BrickLib;
+﻿using RaGae.Game.Blocks.BrickLib;
 using System.Drawing;
 
-namespace Ragae.Game.Blocks.GameLib
+namespace RaGae.Game.Blocks.GameLib
 {
     public class FieldBrick
     {

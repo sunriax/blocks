@@ -1,4 +1,4 @@
-﻿namespace Ragae.Game.Blocks.BrickLib.Enumeration
+﻿namespace RaGae.Game.Blocks.BrickLib.Enumeration
 {
     public enum Rotation
     {

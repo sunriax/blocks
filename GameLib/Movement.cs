@@ -1,9 +1,9 @@
-﻿using Ragae.Game.Blocks.BrickLib.Enumeration;
-using Ragae.Game.Blocks.GameLib.Enumeration;
+﻿using RaGae.Game.Blocks.BrickLib.Enumeration;
+using RaGae.Game.Blocks.GameLib.Enumeration;
 using System.Drawing;
 using System.Linq;
 
-namespace Ragae.Game.Blocks.GameLib
+namespace RaGae.Game.Blocks.GameLib
 {
     public delegate void Invalidate(object sender);
     public class Movement

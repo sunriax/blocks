@@ -1,6 +1,7 @@
-using Ragae.Game.Blocks.AppLib;
-using Ragae.Game.Blocks.DataLib;
-using Ragae.Game.Blocks.DataLib.Converter;
+using RaGae.Game.Blocks.DataLib;
+using RaGae.Game.Blocks.DataLib.Config;
+using RaGae.Game.Blocks.DataLib.Converter;
+using RaGae.Game.Blocks.DataLib.Score;
 using System;
 using System.Globalization;
 using System.IO;
@@ -8,7 +9,7 @@ using System.Security.Principal;
 using System.Text.Json;
 using System.Windows.Forms;
 
-namespace Ragae.Game.Blocks.App
+namespace RaGae.Game.Blocks.App
 {
     static class Program
     {

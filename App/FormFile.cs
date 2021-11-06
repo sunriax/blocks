@@ -1,9 +1,9 @@
-﻿using Ragae.Game.Blocks.AppLib;
+﻿using RaGae.Game.Blocks.AppLib;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
-namespace Ragae.Game.Blocks.App
+namespace RaGae.Game.Blocks.App
 {
     public partial class FormFile : Form
     {

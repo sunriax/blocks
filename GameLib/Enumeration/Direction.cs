@@ -1,4 +1,4 @@
-﻿namespace Ragae.Game.Blocks.GameLib.Enumeration
+﻿namespace RaGae.Game.Blocks.GameLib.Enumeration
 {
     public enum Direction
     {

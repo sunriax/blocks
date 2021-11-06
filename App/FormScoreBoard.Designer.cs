@@ -1,5 +1,5 @@
 ﻿
-namespace Ragae.Game.Blocks.App
+namespace RaGae.Game.Blocks.App
 {
     partial class FormScoreBoard
     {

@@ -1,9 +1,9 @@
-﻿using Ragae.Game.Blocks.BrickLib;
+﻿using RaGae.Game.Blocks.BrickLib;
 using System;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Ragae.Game.Blocks.DataLib.Converter
+namespace RaGae.Game.Blocks.DataLib.Converter
 {
     public class BrickJsonConverter : JsonConverter<BaseBrick>
     {

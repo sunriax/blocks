@@ -1,5 +1,5 @@
 ﻿
-namespace Ragae.Game.Blocks.App
+namespace RaGae.Game.Blocks.App
 {
     partial class FormSound
     {
@@ -82,7 +82,7 @@ namespace Ragae.Game.Blocks.App
             // buttonGameOverPlay
             // 
             resources.ApplyResources(this.buttonGameOverPlay, "buttonGameOverPlay");
-            this.buttonGameOverPlay.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Run;
+            this.buttonGameOverPlay.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Run;
             this.buttonGameOverPlay.Name = "buttonGameOverPlay";
             this.buttonGameOverPlay.UseVisualStyleBackColor = true;
             this.buttonGameOverPlay.Click += new System.EventHandler(this.buttonPlay_Click);
@@ -95,7 +95,7 @@ namespace Ragae.Game.Blocks.App
             // buttonGameOverFile
             // 
             resources.ApplyResources(this.buttonGameOverFile, "buttonGameOverFile");
-            this.buttonGameOverFile.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Sound;
+            this.buttonGameOverFile.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Sound;
             this.buttonGameOverFile.Name = "buttonGameOverFile";
             this.buttonGameOverFile.UseVisualStyleBackColor = true;
             this.buttonGameOverFile.Click += new System.EventHandler(this.buttonFile_Click);
@@ -109,7 +109,7 @@ namespace Ragae.Game.Blocks.App
             // buttonPausePlay
             // 
             resources.ApplyResources(this.buttonPausePlay, "buttonPausePlay");
-            this.buttonPausePlay.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Run;
+            this.buttonPausePlay.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Run;
             this.buttonPausePlay.Name = "buttonPausePlay";
             this.buttonPausePlay.UseVisualStyleBackColor = true;
             this.buttonPausePlay.Click += new System.EventHandler(this.buttonPlay_Click);
@@ -122,7 +122,7 @@ namespace Ragae.Game.Blocks.App
             // buttonPauseFile
             // 
             resources.ApplyResources(this.buttonPauseFile, "buttonPauseFile");
-            this.buttonPauseFile.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Sound;
+            this.buttonPauseFile.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Sound;
             this.buttonPauseFile.Name = "buttonPauseFile";
             this.buttonPauseFile.UseVisualStyleBackColor = true;
             this.buttonPauseFile.Click += new System.EventHandler(this.buttonFile_Click);
@@ -136,7 +136,7 @@ namespace Ragae.Game.Blocks.App
             // buttonMultiRowPlay
             // 
             resources.ApplyResources(this.buttonMultiRowPlay, "buttonMultiRowPlay");
-            this.buttonMultiRowPlay.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Run;
+            this.buttonMultiRowPlay.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Run;
             this.buttonMultiRowPlay.Name = "buttonMultiRowPlay";
             this.buttonMultiRowPlay.UseVisualStyleBackColor = true;
             this.buttonMultiRowPlay.Click += new System.EventHandler(this.buttonPlay_Click);
@@ -149,7 +149,7 @@ namespace Ragae.Game.Blocks.App
             // buttonMultiRowFile
             // 
             resources.ApplyResources(this.buttonMultiRowFile, "buttonMultiRowFile");
-            this.buttonMultiRowFile.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Sound;
+            this.buttonMultiRowFile.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Sound;
             this.buttonMultiRowFile.Name = "buttonMultiRowFile";
             this.buttonMultiRowFile.UseVisualStyleBackColor = true;
             this.buttonMultiRowFile.Click += new System.EventHandler(this.buttonFile_Click);
@@ -168,7 +168,7 @@ namespace Ragae.Game.Blocks.App
             // buttonFolder
             // 
             resources.ApplyResources(this.buttonFolder, "buttonFolder");
-            this.buttonFolder.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.FolderOpened;
+            this.buttonFolder.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.FolderOpened;
             this.buttonFolder.Name = "buttonFolder";
             this.buttonFolder.UseVisualStyleBackColor = true;
             this.buttonFolder.Click += new System.EventHandler(this.buttonFolder_Click);
@@ -182,7 +182,7 @@ namespace Ragae.Game.Blocks.App
             // buttonGamePlay
             // 
             resources.ApplyResources(this.buttonGamePlay, "buttonGamePlay");
-            this.buttonGamePlay.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Run;
+            this.buttonGamePlay.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Run;
             this.buttonGamePlay.Name = "buttonGamePlay";
             this.buttonGamePlay.UseVisualStyleBackColor = true;
             this.buttonGamePlay.Click += new System.EventHandler(this.buttonPlay_Click);
@@ -195,7 +195,7 @@ namespace Ragae.Game.Blocks.App
             // buttonGameFile
             // 
             resources.ApplyResources(this.buttonGameFile, "buttonGameFile");
-            this.buttonGameFile.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Sound;
+            this.buttonGameFile.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Sound;
             this.buttonGameFile.Name = "buttonGameFile";
             this.buttonGameFile.UseVisualStyleBackColor = true;
             this.buttonGameFile.Click += new System.EventHandler(this.buttonFile_Click);

@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Ragae.Game.Blocks.DataLib.Converter
+namespace RaGae.Game.Blocks.DataLib.Converter
 {
     public class CultureJsonConverter : JsonConverter<CultureInfo>
     {

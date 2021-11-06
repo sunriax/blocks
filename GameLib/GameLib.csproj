@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <AssemblyName>Ragae.Game.Blocks.GameLib</AssemblyName>
-    <RootNamespace>Ragae.Game.Blocks.GameLib</RootNamespace>
+    <AssemblyName>RaGae.Game.Blocks.GameLib</AssemblyName>
+    <RootNamespace>RaGae.Game.Blocks.GameLib</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

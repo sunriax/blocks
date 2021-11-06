@@ -1,4 +1,4 @@
-﻿namespace Ragae.Game.Blocks.AppLib
+﻿namespace RaGae.Game.Blocks.DataLib.Score
 {
     public class ScoreEntry
     {

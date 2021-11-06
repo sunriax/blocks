@@ -1,4 +1,4 @@
-﻿namespace Ragae.Game.Blocks.BrickLib
+﻿namespace RaGae.Game.Blocks.BrickLib
 {
     public class TeeWeeBrick : BaseBrick
     {

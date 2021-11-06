@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Ragae.Game.Blocks.App.Properties {
+namespace RaGae.Game.Blocks.App.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Ragae.Game.Blocks.App.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Ragae.Game.Blocks.App.Properties.StringResource", typeof(StringResource).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RaGae.Game.Blocks.App.Properties.StringResource", typeof(StringResource).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

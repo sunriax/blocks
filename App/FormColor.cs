@@ -1,8 +1,9 @@
-﻿using Ragae.Game.Blocks.AppLib;
-using Ragae.Game.Blocks.BrickLib;
-using Ragae.Game.Blocks.DataLib;
-using Ragae.Game.Blocks.DataLib.Converter;
-using Ragae.Game.Blocks.GameLib;
+﻿using RaGae.Game.Blocks.AppLib;
+using RaGae.Game.Blocks.BrickLib;
+using RaGae.Game.Blocks.DataLib;
+using RaGae.Game.Blocks.DataLib.Config;
+using RaGae.Game.Blocks.DataLib.Converter;
+using RaGae.Game.Blocks.GameLib;
 using System;
 using System.Data;
 using System.Drawing;
@@ -11,7 +12,7 @@ using System.Linq;
 using System.Text.Json;
 using System.Windows.Forms;
 
-namespace Ragae.Game.Blocks.App
+namespace RaGae.Game.Blocks.App
 {
     public partial class FormColor : Form
     {

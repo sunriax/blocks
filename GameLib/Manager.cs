@@ -1,4 +1,4 @@
-﻿using Ragae.Game.Blocks.GameLib.Factory;
+﻿using RaGae.Game.Blocks.GameLib.Factory;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Timers;
 
-namespace Ragae.Game.Blocks.GameLib
+namespace RaGae.Game.Blocks.GameLib
 {
 
     public class Manager : IDisposable

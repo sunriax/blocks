@@ -1,5 +1,5 @@
 ﻿
-namespace Ragae.Game.Blocks.App
+namespace RaGae.Game.Blocks.App
 {
     partial class FormMain
     {
@@ -106,13 +106,13 @@ namespace Ragae.Game.Blocks.App
             this.openToolStripMenuItem,
             this.toolStripSeparator4,
             this.quitToolStripMenuItem});
-            this.gameToolStripMenuItem.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Rows;
+            this.gameToolStripMenuItem.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Rows;
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
             // 
             // startToolStripMenuItem
             // 
             resources.ApplyResources(this.startToolStripMenuItem, "startToolStripMenuItem");
-            this.startToolStripMenuItem.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Run;
+            this.startToolStripMenuItem.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Run;
             this.startToolStripMenuItem.Name = "startToolStripMenuItem";
             this.startToolStripMenuItem.Click += new System.EventHandler(this.startToolStripMenuItem_Click);
             // 
@@ -124,7 +124,7 @@ namespace Ragae.Game.Blocks.App
             // highscoreToolStripMenuItem
             // 
             resources.ApplyResources(this.highscoreToolStripMenuItem, "highscoreToolStripMenuItem");
-            this.highscoreToolStripMenuItem.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.ListView;
+            this.highscoreToolStripMenuItem.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.ListView;
             this.highscoreToolStripMenuItem.Name = "highscoreToolStripMenuItem";
             this.highscoreToolStripMenuItem.Click += new System.EventHandler(this.highscoreToolStripMenuItem_Click);
             // 
@@ -136,14 +136,14 @@ namespace Ragae.Game.Blocks.App
             // saveToolStripMenuItem
             // 
             resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
-            this.saveToolStripMenuItem.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Save;
+            this.saveToolStripMenuItem.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Save;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
             resources.ApplyResources(this.openToolStripMenuItem, "openToolStripMenuItem");
-            this.openToolStripMenuItem.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Open;
+            this.openToolStripMenuItem.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Open;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
@@ -155,7 +155,7 @@ namespace Ragae.Game.Blocks.App
             // quitToolStripMenuItem
             // 
             resources.ApplyResources(this.quitToolStripMenuItem, "quitToolStripMenuItem");
-            this.quitToolStripMenuItem.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Exit;
+            this.quitToolStripMenuItem.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Exit;
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
             this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
             // 
@@ -168,27 +168,27 @@ namespace Ragae.Game.Blocks.App
             this.colorToolStripMenuItem,
             this.toolStripSeparator5,
             this.gridToolStripMenuItem});
-            this.settingsToolStripMenuItem.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Settings;
+            this.settingsToolStripMenuItem.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Settings;
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             // 
             // handlingToolStripMenuItem
             // 
             resources.ApplyResources(this.handlingToolStripMenuItem, "handlingToolStripMenuItem");
-            this.handlingToolStripMenuItem.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Handling;
+            this.handlingToolStripMenuItem.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Handling;
             this.handlingToolStripMenuItem.Name = "handlingToolStripMenuItem";
             this.handlingToolStripMenuItem.Click += new System.EventHandler(this.handlingToolStripMenuItem_Click);
             // 
             // soundToolStripMenuItem
             // 
             resources.ApplyResources(this.soundToolStripMenuItem, "soundToolStripMenuItem");
-            this.soundToolStripMenuItem.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Sound;
+            this.soundToolStripMenuItem.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Sound;
             this.soundToolStripMenuItem.Name = "soundToolStripMenuItem";
             this.soundToolStripMenuItem.Click += new System.EventHandler(this.soundToolStripMenuItem_Click);
             // 
             // colorToolStripMenuItem
             // 
             resources.ApplyResources(this.colorToolStripMenuItem, "colorToolStripMenuItem");
-            this.colorToolStripMenuItem.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Color;
+            this.colorToolStripMenuItem.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Color;
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
             this.colorToolStripMenuItem.Click += new System.EventHandler(this.colorToolStripMenuItem_Click);
             // 
@@ -213,7 +213,7 @@ namespace Ragae.Game.Blocks.App
             this.updateToolStripMenuItem,
             this.versionToolStripMenuItem,
             this.licenseToolStripMenuItem});
-            this.helpToolStripMenuItem.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Hot;
+            this.helpToolStripMenuItem.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Hot;
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             // 
             // languageToolStripMenuItem
@@ -222,7 +222,7 @@ namespace Ragae.Game.Blocks.App
             this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.englishToolStripMenuItem,
             this.germanToolStripMenuItem});
-            this.languageToolStripMenuItem.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Flag;
+            this.languageToolStripMenuItem.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Flag;
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
             // 
             // englishToolStripMenuItem
@@ -245,21 +245,21 @@ namespace Ragae.Game.Blocks.App
             // updateToolStripMenuItem
             // 
             resources.ApplyResources(this.updateToolStripMenuItem, "updateToolStripMenuItem");
-            this.updateToolStripMenuItem.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Update;
+            this.updateToolStripMenuItem.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Update;
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
             this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // versionToolStripMenuItem
             // 
             resources.ApplyResources(this.versionToolStripMenuItem, "versionToolStripMenuItem");
-            this.versionToolStripMenuItem.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Version;
+            this.versionToolStripMenuItem.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Version;
             this.versionToolStripMenuItem.Name = "versionToolStripMenuItem";
             this.versionToolStripMenuItem.Click += new System.EventHandler(this.versionToolStripMenuItem_Click);
             // 
             // licenseToolStripMenuItem
             // 
             resources.ApplyResources(this.licenseToolStripMenuItem, "licenseToolStripMenuItem");
-            this.licenseToolStripMenuItem.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Contract;
+            this.licenseToolStripMenuItem.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Contract;
             this.licenseToolStripMenuItem.Name = "licenseToolStripMenuItem";
             this.licenseToolStripMenuItem.Click += new System.EventHandler(this.licenseToolStripMenuItem_Click);
             // 
@@ -290,7 +290,7 @@ namespace Ragae.Game.Blocks.App
             // buttonPause
             // 
             resources.ApplyResources(this.buttonPause, "buttonPause");
-            this.buttonPause.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Pause;
+            this.buttonPause.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Pause;
             this.buttonPause.Name = "buttonPause";
             this.buttonPause.UseVisualStyleBackColor = true;
             this.buttonPause.Click += new System.EventHandler(this.buttonPause_Click);
@@ -298,7 +298,7 @@ namespace Ragae.Game.Blocks.App
             // buttonPlay
             // 
             resources.ApplyResources(this.buttonPlay, "buttonPlay");
-            this.buttonPlay.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Run;
+            this.buttonPlay.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Run;
             this.buttonPlay.Name = "buttonPlay";
             this.buttonPlay.UseVisualStyleBackColor = true;
             this.buttonPlay.Click += new System.EventHandler(this.buttonPlay_Click);

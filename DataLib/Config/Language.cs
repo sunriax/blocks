@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace Ragae.Game.Blocks.AppLib
+namespace RaGae.Game.Blocks.DataLib.Config
 {
     public class Language
     {

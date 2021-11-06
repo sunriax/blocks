@@ -1,9 +1,11 @@
-using Ragae.Game.Blocks.GameLib;
-using Ragae.Game.Blocks.GameLib.Factory;
+using RaGae.Game.Blocks.GameLib;
+using RaGae.Game.Blocks.GameLib.Factory;
 using System.Drawing;
 using static GameLibTest.Helper.GameLibHelper;
 using Xunit;
 using System.Collections.Generic;
+using RaGae.Game.Blocks.BrickLib;
+using RaGae.Game.Blocks.BrickLib.Enumeration;
 
 namespace GameLibTest
 {
@@ -22,12 +24,27 @@ namespace GameLibTest
             Assert.NotNull(movement.Field);
         }
 
+        public static IEnumerable<BaseBrick> GetBrickData()
+        {
+            yield return new BlueRickyBrick();
+            yield return new ClevelandBrick();
+            yield return new HeroBrick();
+            yield return new OrangeRickyBrick();
+            yield return new RhodeIslandBrick();
+            yield return new SmashBoyBrick();
+            yield return new TeeWeeBrick();
+        }
+
         public static IEnumerable<object[]> GetMovementData()
         {
-            for (int i = 0; i < 2; i++)
+            foreach (BaseBrick brick in GetBrickData())
             {
-                yield return new object[]
+                for (int j = 0; j < 3; j++)
                 {
+                    for (int i = 0; i < 2; i++)
+                    {
+                        yield return new object[]
+                        {
                     new List<Item[]>()
                     {
                         FillLine(10),
@@ -35,22 +52,41 @@ namespace GameLibTest
                         FillLine(10),
                         FillLine(10)
                     },
+                    brick,
+                    j,
                     i == 0 ? false : true
-                };
+                        };
 
-                yield return new object[]
-                {
+                        yield return new object[]
+                        {
                     new List<Item[]>()
                     {
                     },
+                    brick,
+                    j,
                     i == 0 ? false : true
-                };
+                        };
+
+                        yield return new object[]
+                        {
+                    new List<Item[]>()
+                    {
+                        FillLine(10),
+                        HalfLine(10),
+                        FillLine(10)
+                    },
+                    brick,
+                    j,
+                    i == 0 ? false : true
+                        };
+                    }
+                }
             }
         }
 
         [Theory]
         [MemberData(nameof(GetMovementData))]
-        public void CreateMovementAndMoveDownWithDifferentSettings_Passing(List<Item[]> line, bool toEnd)
+        public void CreateMovementAndMoveDownWithDifferentSettings_Passing(List<Item[]> line, BaseBrick brick, int rotate, bool toEnd)
         {
             Movement movement = factory.CreateMovement(factory.CreateField());
             movement.Field.Line.AddRange(line);
@@ -58,7 +94,16 @@ namespace GameLibTest
             Assert.NotNull(movement);
             Assert.NotNull(movement.Field);
 
-            movement.Field.Current = factory.CreateFieldBrick(Color.Red);
+            movement.Field.Current = new FieldBrick(brick)
+            {
+                Position = new Point(factory.Size.Width / 2, factory.Size.Height),
+                Color = Color.Red
+            };
+
+            for (int j = 0; j < rotate; j++)
+            {
+                movement.Rotate(Rotation.Right);
+            }
 
             int i = movement.Field.Current.Position.Y;
 

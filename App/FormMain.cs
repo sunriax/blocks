@@ -1,11 +1,13 @@
-﻿using Ragae.Game.Blocks.AppLib;
-using Ragae.Game.Blocks.BrickLib.Enumeration;
-using Ragae.Game.Blocks.DataLib;
-using Ragae.Game.Blocks.DataLib.Converter;
-using Ragae.Game.Blocks.GameLib;
-using Ragae.Game.Blocks.GameLib.Enumeration;
-using Ragae.Game.Blocks.GameLib.Factory;
-using Ragae.Game.Blocks.GameLib.Provider;
+﻿using RaGae.Game.Blocks.AppLib;
+using RaGae.Game.Blocks.BrickLib.Enumeration;
+using RaGae.Game.Blocks.DataLib;
+using RaGae.Game.Blocks.DataLib.Config;
+using RaGae.Game.Blocks.DataLib.Converter;
+using RaGae.Game.Blocks.DataLib.Score;
+using RaGae.Game.Blocks.GameLib;
+using RaGae.Game.Blocks.GameLib.Enumeration;
+using RaGae.Game.Blocks.GameLib.Factory;
+using RaGae.Game.Blocks.GameLib.Provider;
 using System;
 using System.Drawing;
 using System.Globalization;
@@ -16,7 +18,7 @@ using System.Text;
 using System.Text.Json;
 using System.Windows.Forms;
 
-namespace Ragae.Game.Blocks.App
+namespace RaGae.Game.Blocks.App
 {
     public partial class FormMain : Form
     {

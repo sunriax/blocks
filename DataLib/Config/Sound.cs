@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Ragae.Game.Blocks.AppLib
+namespace RaGae.Game.Blocks.DataLib.Config
 {
     public class Sound
     {

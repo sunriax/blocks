@@ -1,11 +1,11 @@
-﻿using Ragae.Game.Blocks.AppLib;
-using Ragae.Game.Blocks.DataLib;
+﻿using RaGae.Game.Blocks.DataLib;
+using RaGae.Game.Blocks.DataLib.Config;
 using System;
 using System.IO;
 using System.Media;
 using System.Windows.Forms;
 
-namespace Ragae.Game.Blocks.App
+namespace RaGae.Game.Blocks.App
 {
     public partial class FormSound : Form
     {

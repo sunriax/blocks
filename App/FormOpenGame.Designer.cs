@@ -1,5 +1,5 @@
 ﻿
-namespace Ragae.Game.Blocks.App
+namespace RaGae.Game.Blocks.App
 {
     partial class FormOpenGame
     {
@@ -55,7 +55,7 @@ namespace Ragae.Game.Blocks.App
             // buttonRemove
             // 
             resources.ApplyResources(this.buttonRemove, "buttonRemove");
-            this.buttonRemove.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Remove;
+            this.buttonRemove.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Remove;
             this.buttonRemove.Name = "buttonRemove";
             this.buttonRemove.UseVisualStyleBackColor = true;
             this.buttonRemove.Click += new System.EventHandler(this.buttonRemove_Click);
@@ -63,7 +63,7 @@ namespace Ragae.Game.Blocks.App
             // buttonOpen
             // 
             resources.ApplyResources(this.buttonOpen, "buttonOpen");
-            this.buttonOpen.Image = global::Ragae.Game.Blocks.App.Properties.ImageResource.Open;
+            this.buttonOpen.Image = global::RaGae.Game.Blocks.App.Properties.ImageResource.Open;
             this.buttonOpen.Name = "buttonOpen";
             this.buttonOpen.UseVisualStyleBackColor = true;
             this.buttonOpen.Click += new System.EventHandler(this.buttonOpen_Click);

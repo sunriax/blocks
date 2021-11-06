@@ -1,4 +1,4 @@
-﻿using Ragae.Game.Blocks.GameLib;
+﻿using RaGae.Game.Blocks.GameLib;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -13,6 +13,21 @@ namespace GameLibTest.Helper
         public static Item[] FillLine(int width) => Enumerable.Repeat(new Item() { Color = Color.Blue }, width).ToArray();
 
         public static Item[] EmptyLine(int width) => new Item[width];
+
+        public static Item[] HalfLine(int width)
+        {
+            Item[] temp = new Item[width];
+
+            for (int i = 0; i < temp.Length; i += 2)
+            {
+                temp[i] = new Item
+                {
+                    Color = Color.Red
+                };
+            }
+
+            return temp;
+        }
 
         public static bool CheckFieldPosition(List<Item[]> line, FieldBrick fieldBrick)
         {

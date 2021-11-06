@@ -1,5 +1,5 @@
-using Ragae.Game.Blocks.BrickLib;
-using Ragae.Game.Blocks.GameLib;
+using RaGae.Game.Blocks.BrickLib;
+using RaGae.Game.Blocks.GameLib;
 using System;
 using System.Collections.Generic;
 using System.Drawing;

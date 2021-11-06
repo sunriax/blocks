@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Text.Json;
 
-namespace Ragae.Game.Blocks.DataLib
+namespace RaGae.Game.Blocks.DataLib
 {
     public static class DataService
     {

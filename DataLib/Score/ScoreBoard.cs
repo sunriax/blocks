@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Ragae.Game.Blocks.AppLib
+namespace RaGae.Game.Blocks.DataLib.Score
 {
     public class ScoreBoard
     {

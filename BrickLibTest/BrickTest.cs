@@ -1,5 +1,5 @@
-using Ragae.Game.Blocks.BrickLib;
-using Ragae.Game.Blocks.BrickLib.Enumeration;
+using RaGae.Game.Blocks.BrickLib;
+using RaGae.Game.Blocks.BrickLib.Enumeration;
 using System;
 using System.Collections.Generic;
 using Xunit;

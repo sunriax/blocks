@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace Ragae.Game.Blocks.GameLib
+namespace RaGae.Game.Blocks.GameLib
 {
     public class Item
     {
