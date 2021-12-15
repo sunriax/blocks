@@ -33,7 +33,8 @@ jobs:
         dotnet publish ./App/App.csproj -c Release -o blocks/win-x86 -r win-x86 --self-contained true /p:PublishReadyToRun=true /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true
     - name: zip win artifact
       run: |
-        powershell Compress-Archive -Path ./blocks/* -DestinationPath ./blocks-win.zip
+        powershell Compress-Archive -Path ./blocks/win-x64/* -DestinationPath ./blocks-win_x64.zip
+        powershell Compress-Archive -Path ./blocks/win-x86/* -DestinationPath ./blocks-win_x86.zip
         
     #- name: Upload build artifacts
     #  uses: actions/upload-artifact@v2
@@ -46,12 +47,30 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
+        release_name: Release ${{ steps.version.outputs.version }}
         tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
-        file: ./blocks-win.zip
         body: |
           Initial Release
         draft: false
         prerelease: false
+        
+    - name: Upload Windows x64 Artifact
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./blocks-win_x64.zip
+        asset_name: blocks-win_x64.zip
+        asset_content_type: application/zip
     
-    
+    - name: Upload Windows x86 Artifact
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./blocks-win_x86.zip
+        asset_name: blocks-win_x86.zip
+        asset_content_type: application/zip
+
