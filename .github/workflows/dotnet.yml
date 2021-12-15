@@ -35,8 +35,23 @@ jobs:
       run: |
         powershell Compress-Archive -Path ./blocks/* -DestinationPath ./blocks-win.zip
         
-    - name: Upload build artifacts
-      uses: actions/upload-artifact@v2
+    #- name: Upload build artifacts
+    #  uses: actions/upload-artifact@v2
+    #  with:
+    #    name: Windows
+    #    path: ./blocks/*
+    
+    - name: Create Release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        name: Windows
-        path: ./blocks-win.zip
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        file: ./blocks-win.zip
+        body: |
+          Initial Release
+        draft: false
+        prerelease: false
+    
+    
