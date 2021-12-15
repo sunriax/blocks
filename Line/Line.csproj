@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <AssemblyName>Blocks</AssemblyName>
     <RootNamespace>RaGae.Game.Blocks.Line</RootNamespace>
     <ApplicationIcon>ICON.ico</ApplicationIcon>

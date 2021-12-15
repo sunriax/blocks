@@ -107,7 +107,7 @@ namespace RaGae.Game.Blocks.LineLib
                 if (alignment == Alignment.Left)
                 {
                     line.Append(text);
-                    line.Append(new string(' ', (width - text.Length));
+                    line.Append(new string(' ', (width - text.Length)));
                 }
                 else if (alignment == Alignment.Right)
                 {

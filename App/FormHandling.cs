@@ -67,6 +67,8 @@ namespace RaGae.Game.Blocks.App
             this.textBoxDown.Text = Program.HandlingConfig.Down.ToString();
             this.textBoxRotate.Text = Program.HandlingConfig.Rotate.ToString();
             this.textBoxPause.Text = Program.HandlingConfig.Pause.ToString();
+
+            this.buttonFocus.Select();
         }
 
         private void FormHandling_Click(object sender, EventArgs e) => this.buttonFocus.Focus();
