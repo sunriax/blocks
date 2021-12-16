@@ -26,13 +26,13 @@ goto vlc
 
 :vlc
 
-call "C:\Program Files\VideoLAN\VLC\vlc.exe" "blocks.mp3" --sout "#transcode{acodec=mpga,ab=192}:std{access=file,mux=wav,dst=blocks.wav}" vlc://quit
+call "C:\Program Files\VideoLAN\VLC\vlc.exe" "blocks.mp3" --sout "#transcode{acodec=s16l,channels=2,samplerate=44100}:std{access=file,mux=wav,dst=blocks.wav}" vlc://quit
 
-call "C:\Program Files\VideoLAN\VLC\vlc.exe" "pause.mp3" --sout "#transcode{acodec=mpga,ab=192}:std{access=file,mux=wav,dst=pause.wav}" vlc://quit
+call "C:\Program Files\VideoLAN\VLC\vlc.exe" "pause.mp3" --sout "#transcode{acodec=s16l,channels=2,samplerate=44100}:std{access=file,mux=wav,dst=pause.wav}" vlc://quit
 
-call "C:\Program Files\VideoLAN\VLC\vlc.exe" "multirow.mp3" --sout "#transcode{acodec=mpga,ab=192}:std{access=file,mux=wav,dst=multirow.wav}" vlc://quit
+call "C:\Program Files\VideoLAN\VLC\vlc.exe" "multirow.mp3" --sout "#transcode{acodec=s16l,channels=2,samplerate=44100}:std{access=file,mux=wav,dst=multirow.wav}" vlc://quit
 
-call "C:\Program Files\VideoLAN\VLC\vlc.exe" "gameover.mp3" --sout "#transcode{acodec=mpga,ab=192}:std{access=file,mux=wav,dst=gameover.wav}" vlc://quit
+call "C:\Program Files\VideoLAN\VLC\vlc.exe" "gameover.mp3" --sout "#transcode{acodec=s16l,channels=2,samplerate=44100}:std{access=file,mux=wav,dst=gameover.wav}" vlc://quit
 
 goto remove
 
