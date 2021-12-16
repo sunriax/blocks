@@ -2,17 +2,17 @@
 {
     public class SmashBoyBrick : BaseBrick
     {
-        //     +---+---+
-        //     |   |   |
-        // +---+---+---+
+        // +---+---+
+        // |   |   |
+        // +---+---+
         // |   |   |
         // +---+---+
         public SmashBoyBrick()
         {
             base.apperance = new bool[,]
             {
-                { false,  true,  true  },
-                { true,   true,  false }
+                { true,  true },
+                { true,  true }
             };
         }
     }
